@@ -2,28 +2,48 @@
   <div class="hello">
     <div class="landingGrid">
       <h1 class="name">{{ msg }}</h1>
-      <div class="caricature">Colorful hair</div>
+      <div class="avatarBox">
+        <div class="caricature"></div>        
+      </div>
+      <div class="worksDone">
+      </div>
       <div class="aboutMe">
 
-        <ul class="whoYou">
-          <li>Frontend Engineer</li>
+        <div class="atAGlance">
+          <p>I am a Frontend Engineer with a knack for storytelling.</p>
+          <p>I'm also an artist and illustrator.</p> 
+        </div>
+
+        <div class="skills">
+          <label>Languages: </label>
+          <blockquote>HTML, CSS, JavaScript, Vue, Laravel, Node, GraphQL, Python</blockquote>
+          <label>Tools: </label>
+          <blockquote>
+            SASS, Linux, SEO, Bootstrap, Construct2, Flipbook, Adobe Spark, Figma, Actions on Google, Canva, Mailchimp, Email on Acid, Krita.
+          </blockquote>
+        </div>
+
+        <ul class="hobbies">
+          <li>Bookworm</li>
           <li>Storyboarder</li>
-          <li>Cartoonist</li>
-          <li>Aspiring Animator</li>
+          <li>Volunteer</li>
+          <li>Part-time game designer</li>
+          <li>Aspiring animator</li>
           <li>Writer</li>
-          <li>Traveller</li>
-          <li>Literal fish</li>
+          <li>Avid traveller</li>
+          <li>Planner</li>
+          <li>Walking encyclopedia of random facts and tips</li>
+          <li>Fantasy simp</li>
           <li>Mostly spotted gaming</li>
-          <li>Also stares at the sky a lot</li>
+          <li>Stares at the sky a lot</li>
         </ul>
 
       </div>
       <div class="contactLinks">
-        <a href="">Github</a>
-        <a href="">LinkedIn</a>
-        <a href="">Drive</a>
-        <a href="">Instagram</a>
-        <a href="">Twitter</a>
+        <a href="https://github.com/Michie1001">Github</a>
+        <a href="https://www.linkedin.com/in/michelle-ugwu-51996711b/">LinkedIn</a>
+        <a href="https://www.instagram.com/michie_1001/">Instagram</a>
+        <a href="https://twitter.com/Michie1001">Twitter</a>
       </div>
     </div>
       <!-- <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li> -->
@@ -47,10 +67,6 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
 }
 a {
   color: #42b983;
