@@ -6,6 +6,11 @@
         <div class="caricature"></div>        
       </div>
       <div class="worksDone">
+        <Carousel>
+          <CarouselSlide v-for = "(slide, index) in slides" :key="slide" :index="index">
+            <img :src="slide" />
+          </CarouselSlide>
+        </Carousel>
       </div>
       <div class="aboutMe">
 
@@ -51,10 +56,26 @@
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+import CarouselSlide from './CarouselSlide.vue'
+
 export default {
   name: 'Landing',
   props: {
     msg: String
+  },
+  components: {
+    Carousel,
+    CarouselSlide
+  },
+  data(){
+    return{
+      slides: [
+        '@/assets/imgs/nepa.png',
+        '@/assets/imgs/telex.png'
+      ],
+      visibleSlides: 0
+    }
   }
 }
 </script>
