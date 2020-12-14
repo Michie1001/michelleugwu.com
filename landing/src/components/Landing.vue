@@ -71,8 +71,10 @@ export default {
   data(){
     return{
       slides: [
-        '@/assets/imgs/nepa.png',
-        '@/assets/imgs/telex.png'
+        'https://photos.google.com/photo/AF1QipP9BrFZF_qX9o6UlwNpWEX9ePGzXeEfCOHCX-3i/600/350',
+        'https://photos.google.com/photo/AF1QipNQc-E7NssuQFOdnpVg7wCUFwsibBkX3IwikFQT/600/350'
+        // require('../assets/imgs/nepa.png'),
+        // require('../assets/imgs/telex.png')
       ],
       visibleSlides: 0
     }

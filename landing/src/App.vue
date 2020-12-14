@@ -26,7 +26,7 @@ export default {
 body{
   padding: 0;
   margin: 0;
-  object-fit: border-box;
+  box-sizing: border-box;
   border-top: 7px solid #AB63E6;
 }
 a,
