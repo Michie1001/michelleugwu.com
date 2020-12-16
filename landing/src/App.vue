@@ -75,7 +75,7 @@ li {
     }
   }
   .worksDone{
-    // background-color: #eee;
+    background-color: #eee;
     height: 100%;
     grid-column: 2;
     grid-row: 2 / -1;

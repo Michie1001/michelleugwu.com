@@ -7,9 +7,10 @@
       </div>
       <div class="worksDone">
         <Carousel>
-          <CarouselSlide v-for = "(slide, index) in slides" :key="slide" :index="index">
-            <img :src="slide" />
-          </CarouselSlide>
+          <CarouselSlide v-for="(slide, index) in slides"
+            :key="slide"
+            :index="index"
+            :vibileSlide="visibleSlide" />
         </Carousel>
       </div>
       <div class="aboutMe">
@@ -32,6 +33,7 @@
           <li>Bookworm</li>
           <li>Storyboarder</li>
           <li>Volunteer</li>
+          <li>Photographer</li>
           <li>Part-time game designer</li>
           <li>Aspiring animator</li>
           <li>Writer</li>
@@ -71,12 +73,10 @@ export default {
   data(){
     return{
       slides: [
-        'https://photos.google.com/photo/AF1QipP9BrFZF_qX9o6UlwNpWEX9ePGzXeEfCOHCX-3i/600/350',
-        'https://photos.google.com/photo/AF1QipNQc-E7NssuQFOdnpVg7wCUFwsibBkX3IwikFQT/600/350'
-        // require('../assets/imgs/nepa.png'),
-        // require('../assets/imgs/telex.png')
+        require("./imgs/nepa.png"),
+        require("./imgs/telex.png")
       ],
-      visibleSlides: 0
+      visibleSlide: 0
     }
   }
 }
