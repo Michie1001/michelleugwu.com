@@ -12,6 +12,7 @@
             :index="index"
             :vibileSlide="visibleSlide" />
         </Carousel>
+          <!-- filter: hue-rotate(10deg); Use somewhere -->
       </div>
       <div class="aboutMe">
 
