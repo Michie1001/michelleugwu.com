@@ -4,6 +4,7 @@
       app
       color="transparent"
       dark
+      flat
     >
       <div class="d-flex align-center">
         <v-img
@@ -32,6 +33,8 @@
     <v-main>
       <Landing/>
     </v-main>
+    <v-bottom-navigation>
+    </v-bottom-navigation>
   </v-app>
 </template>
 
