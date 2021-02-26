@@ -60,6 +60,11 @@
         </div>
       </v-row>
 
+      <v-row justify="center">
+        <h2>Projects</h2>
+
+      </v-row>
+
       <v-row>
         <!-- <a
           v-for="(eco, i) in ecosystem"
