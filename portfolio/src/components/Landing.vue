@@ -1,75 +1,42 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <!-- <v-col cols="12">
+      <v-col class="mb-4">
+        <h1 class="display-2 font-weight-regular mb-3">
+          Hi, I'm Michelle <br> Frontend Engineer and Animator <br> and I <b><u>make things beautiful</u></b>
+        </h1>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        class="mb-5"
+        cols="6"
+      >
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/logo.png')"
           class="my-3"
           contain
           height="200"
+          alt="Portrait photo of Michelle"
         />
-      </v-col> -->
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-regular mb-3">
-          Hi, I'm Michelle <br> Frontend Engineer and Animator <br> and I <b>make things beautiful</b>
-        </h1>
-      </v-col>
-
-      
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
+        <v-divider
+          inset
+          vertical
+        ></v-divider>
       </v-col>
 
       <v-col
         class="mb-5"
-        cols="12"
+        cols="6"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Important Links
+          About
         </h2>
 
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
+        <v-row>
+          
+          <!-- <a
             v-for="(eco, i) in ecosystem"
             :key="i"
             :href="eco.href"
@@ -77,7 +44,7 @@
             target="_blank"
           >
             {{ eco.text }}
-          </a>
+          </a> -->
         </v-row>
       </v-col>
     </v-row>
