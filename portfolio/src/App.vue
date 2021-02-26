@@ -1,5 +1,14 @@
 <template>
   <v-app>
+    <!-- <div class="starry-bg">
+      <v-img
+        :src="require('/assets/starry.jpg')"
+        class="my-3"
+        cover
+        alt="Background photo of a starry night"
+      />
+      <span>Photo by <a href="https://unsplash.com/@jeremyperkins?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jeremy Perkins</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </div> -->
     <v-app-bar
       app
       color="transparent"

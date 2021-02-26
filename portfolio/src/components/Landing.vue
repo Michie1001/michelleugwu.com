@@ -35,7 +35,7 @@
         </h2>
 
         <v-row>
-          
+
           <!-- <a
             v-for="(eco, i) in ecosystem"
             :key="i"
