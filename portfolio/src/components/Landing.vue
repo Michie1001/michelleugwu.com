@@ -30,64 +30,48 @@
     </v-img>
 
     <v-container>
-      
-      <v-container fluid>
-        <v-row no-gutters>
-          <v-col
-            v-for="(eco, n) in ecosystem"
-            :key="n"
-            :md="6"
-            :sm="6"
-            :xs="12"
-          >
-            <div>
-              {{eco.text}}
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
-
       <v-row>
-        <v-col
-          class="mb-5"
-          cols="6"
-        >
-          <v-img
-            :src="require('../assets/logo.png')"
-            class="my-3"
-            contain
-            height="200"
-            alt="Portrait photo of Michelle"
-          />
-          <v-divider
-            inset
-            vertical
-          ></v-divider>
-        </v-col>
-
-        <v-col
-          class="mb-5"
-          cols="6"
-        >
-
-          <v-row>
+        <div class="grid-area" style="display: grid; grid-template-columns: 50% 50%;">
+          <div class="portrait">
+            <v-img
+              :src="require('../assets/logo.png')"
+              class="my-3"
+              contain
+              height="200"
+              alt="Portrait photo of Michelle"
+            />
+            <v-divider
+              inset
+              vertical
+            ></v-divider>
+          </div>
+          <div class="about">
             <h2 class="headline font-weight-bold mb-3">
               About
             </h2>
-
-            <!-- <a
-              v-for="(eco, i) in ecosystem"
-              :key="i"
-              :href="eco.href"
-              class="subheading mx-3"
-              target="_blank"
-            >
-              {{ eco.text }}
-            </a> -->
-          </v-row>
-        </v-col>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="contact"><b>2340184858967</b></div>
+        </div>
       </v-row>
+
+      <v-row>
+        <!-- <a
+          v-for="(eco, i) in ecosystem"
+          :key="i"
+          :href="eco.href"
+          class="subheading mx-3"
+          target="_blank"
+        >
+          {{ eco.text }}
+        </a> -->
+      </v-row>
+
     </v-container>
   </div>
 </template>
