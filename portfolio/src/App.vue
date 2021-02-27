@@ -35,3 +35,14 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss">
+  .landing{
+    .logo-area{
+      height: 80px;
+      width: 60px;
+      position: absolute;
+      margin: 20px;
+    }
+  }
+</style>

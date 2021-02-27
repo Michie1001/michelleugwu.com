@@ -3,9 +3,9 @@
     <v-img
       dark
       max-height="500px"
-      :src="require('../assets/starry2.jpg')"
+      :src="require('../assets/starry.jpg')"
     >
-      <div style="height: 80px; width: 60px; position: absolute; margin: 20px">
+      <div class="logo-area">
         <v-img
           class="shrink mr-2"
           contain
