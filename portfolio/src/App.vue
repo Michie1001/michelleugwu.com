@@ -58,16 +58,24 @@ export default {
       text-align: center;
     }
     .grid-area{
-      margin: 5rem 2rem;
+      margin: 2rem;
       display: grid;
       grid-template-columns: 50% 50%;
-      .experience{
+      grid-template-rows: repeat(4, 1fr);
+      align-items: center;
+      .experience-section{
         text-align: right;
         grid-column: 1 / 2;
-        h3{}
-        span{}
+        grid-row: 1 / 2;
+        h3{
+          margin: 0 3rem 2rem 2rem;
+        }
+        span{
+          color: #0c107c;
+        }
         p{
           color: #777;
+          margin-bottom: 1rem;
         }
       }
     }

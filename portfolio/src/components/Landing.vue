@@ -38,14 +38,17 @@
           About
         </h2>
         <div class="grid-area">
-          <div class="experience"
-          v-for="exp in experience"
-          :key="exp.id"
-          >
-            <h3><span>{{exp.role}}</span> at {{exp.company}}</h3>
-            <p>{{exp.date}}</p>
+          <div class="experience-section">
+            <h3>Experience</h3>
+            <div class="experience"
+            v-for="exp in experience"
+            :key="exp.id"
+            >
+              <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
+              <p>{{exp.date}}</p>
+            </div>
           </div>
-          <div class="">
+          <div class="education-section">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
