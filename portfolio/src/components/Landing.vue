@@ -42,7 +42,7 @@
           v-for="exp in experience"
           :key="exp.id"
           >
-            <h3>{{exp.role}} at <span>{{exp.company}}</span></h3>
+            <h3><span>{{exp.role}}</span> at {{exp.company}}</h3>
             <p>{{exp.date}}</p>
           </div>
           <div class="">
