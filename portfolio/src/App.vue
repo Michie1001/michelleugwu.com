@@ -46,7 +46,7 @@ export default {
       line-height: 1.3;
       white-space: nowrap;
       overflow: hidden;
-      .messages::before{
+      .messages::after{
         font-weight: bold;
         content: ' ';
         animation: openclose 5s ease infinite;

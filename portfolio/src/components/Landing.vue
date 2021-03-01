@@ -1,18 +1,18 @@
 <template>
   <div class="landing">
-    <!-- <v-img
+    <v-img
       dark
       max-height="500px"
       :src="require('../assets/starry.jpg')"
-    > --> <!--there's no need for a logo at the moment-->
-      <div class="logo-area">
+    >
+      <!-- <div class="logo-area">
         <v-img
           class="shrink mr-2"
           contain
           transition="scale-transition"
           :src="require('../assets/logo.svg')"
         ></v-img>
-      </div>
+      </div> there's no need for a logo at the moment--> 
       <v-layout fill-height align-center>
         <v-container>
           <v-row align="center" justify="center" class="white--text text-center">
