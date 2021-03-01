@@ -46,11 +46,21 @@ export default {
       line-height: 1.3;
       white-space: nowrap;
       overflow: hidden;
-      .messages::after{
+      .messages::before{
         font-weight: bold;
         content: ' ';
         animation: openclose 5s ease infinite;
       }
+    }
+    .about{
+      width: 100%;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .grid-area{
+      margin: 5rem 2rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
     }
     @keyframes openclose {
       0% {

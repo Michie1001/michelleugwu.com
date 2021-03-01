@@ -34,7 +34,10 @@
 
     <v-container>
       <v-row>
-        <div class="grid-area" style="display: grid; grid-template-columns: 50% 50%;">
+        <h2 class="about">
+          About
+        </h2>
+        <div class="grid-area">
           <div class="portrait">
             <v-img
               :src="require('../assets/logo.png')"
@@ -48,10 +51,7 @@
               vertical
             ></v-divider>
           </div>
-          <div class="about">
-            <h2 class="headline font-weight-bold mb-3">
-              About
-            </h2>
+          <div class="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
