@@ -61,6 +61,13 @@ export default {
       margin: 5rem 2rem;
       display: grid;
       grid-template-columns: 50% 50%;
+      .experience{
+        text-indent: 30%;
+        grid-column: 1 / 2;
+        h3{}
+        span{}
+        p{}
+      }
     }
     @keyframes openclose {
       0% {

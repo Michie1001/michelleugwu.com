@@ -38,18 +38,12 @@
           About
         </h2>
         <div class="grid-area">
-          <div class="portrait">
-            <v-img
-              :src="require('../assets/logo.png')"
-              class="my-3"
-              contain
-              height="200"
-              alt="Portrait photo of Michelle"
-            />
-            <v-divider
-              inset
-              vertical
-            ></v-divider>
+          <div class="experience"
+          v-for="exp in experience"
+          :key="exp.id"
+          >
+            <h3>{{exp.role}} at <span>{{exp.company}}</span></h3>
+            <p>{{exp.date}}</p>
           </div>
           <div class="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -151,26 +145,26 @@
           href: 'https://github.com/vuetifyjs/awesome-vuetify',
         },
       ],
-      importantLinks: [
+      experience: [
         {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
+          role: 'Frontend Engineer',
+          company: 'Hotels.ng',
+          date: 'January 2020 - June 2020',
         },
         {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
+          role: 'Frontend Developer Intern',
+          company: 'Hotels.ng',
+          date: 'June 2017 - November 2017',
         },
         {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
+          role: 'Growth and Marketing Intern',
+          company: 'Hotels.ng',
+          date: 'May 2017 - June 2017',
         },
         {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
+          role: 'Volunteer Code Instructor',
+          company: 'Child Can Code',
+          date: 'August 2016 - September 2016',
         },
       ],
       messageToShow: '',
