@@ -79,7 +79,8 @@ export default {
         }
       }
       .education-section{
-
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
       }
     }
     @keyframes openclose {
