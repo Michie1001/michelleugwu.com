@@ -1,17 +1,5 @@
 <template>
   <v-app>
-    <!-- <div class="starry-bg">
-      <v-img
-        :src="require('/assets/starry.jpg')"
-        class="my-3"
-        cover
-        alt="Background photo of a starry night"
-      />
-      <span>starry Photo by <a href="https://unsplash.com/@jeremyperkins?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jeremy Perkins</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      <span>starry1 Photo by <a href="https://unsplash.com/@sonance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Viktor Forgacs</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      <span>starry2 Photo by <a href="https://unsplash.com/@sonance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Viktor Forgacs</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-    </div> -->
-
     <v-main>
       <Landing/>
     </v-main>
@@ -37,12 +25,52 @@ export default {
 </script>
 
 <style lang="scss">
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      margin: inherit;
+      padding: inherit;
+      list-style-type: none;
+    }
+  }
   .landing{
+    background-color:#f1f1f1;
     .logo-area{
       height: 80px;
       width: 60px;
       position: absolute;
       margin: 20px;
+    }
+    .main-heading{
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      .messages::before{
+        font-weight: bold;
+        content: ' ';
+        animation: openclose 5s ease infinite;
+      }
+    }
+    @keyframes openclose {
+      0% {
+        content: 'make things beautiful';
+      }
+      20% {
+        content: 'engineer frontend code';
+      }
+      40% {
+        content: 'animate';
+      }
+      60% {
+        content: 'draw';
+      }
+      80% {
+        content: 'write';
+      }
+      100% {
+        content: '...';
+      }
     }
   }
 </style>

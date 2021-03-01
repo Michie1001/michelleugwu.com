@@ -1,16 +1,16 @@
 <template>
   <div class="landing">
-    <v-img
+    <!-- <v-img
       dark
       max-height="500px"
       :src="require('../assets/starry.jpg')"
-    >
+    > --> <!--there's no need for a logo at the moment-->
       <div class="logo-area">
         <v-img
           class="shrink mr-2"
           contain
           transition="scale-transition"
-          :src="require('../assets/logo.png')"
+          :src="require('../assets/logo.svg')"
         ></v-img>
       </div>
       <v-layout fill-height align-center>
@@ -19,7 +19,10 @@
             <v-col cols="12">
               <h1
                 :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
-              >Hi, I'm Michelle. <br> Frontend Engineer and Animator <br> and I <b><u>make things beautiful</u></b></h1>
+                class="main-heading"
+              >Hi, I'm Michelle <br>and I 
+              <span class="messages"></span>
+              </h1>
               <!-- <div
                 :class="{'headline': $vuetify.breakpoint.smAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
               >I make applications.</div> -->
@@ -170,19 +173,13 @@
           href: 'https://medium.com/vuetify',
         },
       ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
+      messageToShow: '',
+      messages: [
+        'make things beautiful',
+        'engineer frontend code',
+        'animate',
+        'draw',
+        'write'
       ],
       portrait: 'require("../assets/logo.png")',
       about:'yi',
