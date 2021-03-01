@@ -78,6 +78,9 @@ export default {
           margin-bottom: 1rem;
         }
       }
+      .education-section{
+
+      }
     }
     @keyframes openclose {
       0% {
