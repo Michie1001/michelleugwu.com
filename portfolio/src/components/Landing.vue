@@ -64,6 +64,14 @@
               <span>{{ach}}</span>
             </div>
           </div>
+          <div class="skills-section">
+            <h3>Skills</h3> <!--to be removed-->
+            <div class="skills"
+            v-for="skill in skills"
+            :key="skill.id">
+              <span>{{skill}}</span>
+            </div>
+          </div>
           <div class="contacts-section">
             <h3>Contacts</h3> <!--to be removed-->
             <div class="contacts"
@@ -215,6 +223,34 @@
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
       ],
+      skills: [
+        'VueJS',
+        'Laravel',
+        'GraphQL',
+        'Linux',
+        'Sass',
+        'Bootstrap',
+        'Vuetify',
+        'TypeScript',
+        'SEO',
+        'Figma',
+        'Adobe AfterEffects',
+        'Adobe Photoshop',
+        'Adobe Illustrator',
+        'Adobe Lightroom',
+        'Adobe Spark',
+        'Filmora',
+        'Actions on Google',
+        'Mailchimp',
+        'Email on Acid',
+        'Canva',
+        'Linux',
+        'Sketch Art',
+        'Creative writing',
+        'Fluent English',
+        'Conversational Japanese',
+        'Conversational German',
+      ],
       contact: [
         {
           icon: '',
@@ -235,6 +271,11 @@
           icon: '',
           name: 'Stack Overflow',
           link: 'https://stackoverflow.com/users/story/6276301',
+        },
+        {
+          icon: '',
+          name: 'Twitter',
+          link: 'https://twitter.com/Michie1001',
         },
       ],
       messageToShow: '',

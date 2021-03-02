@@ -61,7 +61,7 @@ export default {
       margin: 2rem auto;
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
       align-items: center;
       h3{
         margin: 0 3rem 1rem 3rem;
@@ -101,7 +101,7 @@ export default {
       }
       .contacts-section{
         grid-column: 2 / -1;
-        grid-row: 4 / 5;
+        grid-row: 5 / 6;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
