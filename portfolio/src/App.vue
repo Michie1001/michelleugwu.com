@@ -58,29 +58,43 @@ export default {
       text-align: center;
     }
     .grid-area{
-      margin: 2rem;
+      margin: 2rem auto;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(4, 1fr);
       align-items: center;
+      justify-items: center;
+      h3{
+        margin: 0 3rem 1rem 3rem;
+      }
+      span{
+        color: #0c107c;
+      }
+      p{
+        color: #777;
+        margin-bottom: 1rem;
+      }
       .experience-section{
         text-align: right;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        h3{
-          margin: 0 3rem 2rem 2rem;
-        }
-        span{
-          color: #0c107c;
-        }
-        p{
-          color: #777;
-          margin-bottom: 1rem;
-        }
       }
       .education-section{
         grid-column: 2 / -1;
         grid-row: 2 / 3;
+        margin-left: 2rem;
+      }
+      .achievements-section{
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        .achievements span{
+          margin-bottom: 1rem;
+          font-weight: bold;
+          &::before{
+            content: '• '
+          }
+        }
       }
     }
     @keyframes openclose {

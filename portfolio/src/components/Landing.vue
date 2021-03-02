@@ -39,22 +39,30 @@
         </h2>
         <div class="grid-area">
           <div class="experience-section">
-            <h3>Experience</h3>
+            <h3>Experience</h3> <!--to be removed-->
             <div class="experience"
             v-for="exp in experience"
-            :key="exp.id"
-            >
+            :key="exp.id">
               <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
               <p>{{exp.date}}</p>
             </div>
           </div>
           <div class="education-section">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Education</h3> <!--to be removed-->
+            <div class="education"
+            v-for="edu in education"
+            :key="edu.id">
+              <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
+              <p>{{edu.date}}</p>
+            </div>
+          </div>
+          <div class="achievements-section">
+            <h3>Achievements</h3> <!--to be removed-->
+            <div class="achievements"
+            v-for="ach in achievements"
+            :key="ach.id">
+              <span>{{ach}}</span>
+            </div>
           </div>
           <div class="contact"><b>2340184858967</b></div>
         </div>
@@ -169,6 +177,31 @@
           company: 'Child Can Code',
           date: 'August 2016 - September 2016',
         },
+      ],
+      education: [
+        {
+          institute: 'Carbon Animation, Lagos, Nigeria',
+          degree: 'Animation Basics',
+          date: 'January 2021 - April 2021 ',
+        },
+        {
+          institute: 'University of Benin, Benin, Nigeria',
+          degree: 'B.Sc, Computer Science',
+          date: 'September 2014 - March 2019 ',
+        },
+      ],
+      achievements: [
+        'National Youth Service',
+        'Participated in ALCwithGoogle and ALCwithMicrosoft',
+        'Co-pioneer/co-organizer of forLoopUniben in the University of Benin',
+        'Participated in the first Frontstack Challenge (Responsive Web Design)',
+        'Interviewed at Microsoft',
+        'Recognized by Figma as one of the top 5 most consistent Figma users in Nigeria in 2018',
+        'Participated in an essay competition on the ‘Formal Education and the Nigerian Youth’ for Sigma Club, Ibadan, Nigeria',
+        'Participated in the University of Benin 2015 Spelling Bee',
+        'Public Relations Officer for NACOSS in my 200level',
+        'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
+        'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
       ],
       messageToShow: '',
       messages: [
