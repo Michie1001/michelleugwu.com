@@ -63,7 +63,6 @@ export default {
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(4, 1fr);
       align-items: center;
-      justify-items: center;
       h3{
         margin: 0 3rem 1rem 3rem;
       }

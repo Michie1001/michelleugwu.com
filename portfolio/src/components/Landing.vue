@@ -64,7 +64,18 @@
               <span>{{ach}}</span>
             </div>
           </div>
-          <div class="contact"><b>2340184858967</b></div>
+          <div class="contacts-section">
+            <h3>Contacts</h3> <!--to be removed-->
+            <div class="contacts"
+            v-for="reach in contact"
+            :key="reach.id">
+              <h5>
+                <span>{{reach.icon}}</span>
+                {{reach.name}}
+              </h5>
+              <p>{{reach.link}}</p>
+            </div>
+          </div>
         </div>
       </v-row>
 
