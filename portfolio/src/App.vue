@@ -73,6 +73,11 @@ export default {
         color: #777;
         margin-bottom: 1rem;
       }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #0c107c;
+      }
       .experience-section{
         text-align: right;
         grid-column: 1 / 2;
@@ -81,7 +86,6 @@ export default {
       .education-section{
         grid-column: 2 / -1;
         grid-row: 2 / 3;
-        margin-left: 2rem;
       }
       .achievements-section{
         text-align: center;
@@ -93,6 +97,17 @@ export default {
           &::before{
             content: '• '
           }
+        }
+      }
+      .contacts-section{
+        grid-column: 2 / -1;
+        grid-row: 4 / 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        .contacts{
         }
       }
     }

@@ -69,11 +69,12 @@
             <div class="contacts"
             v-for="reach in contact"
             :key="reach.id">
-              <h5>
-                <span>{{reach.icon}}</span>
-                {{reach.name}}
-              </h5>
-              <p>{{reach.link}}</p>
+              <a :href="reach.link">
+                <h5>
+                  <span>{{reach.icon}}</span>
+                  {{reach.name}}
+                </h5>
+              </a>
             </div>
           </div>
         </div>
@@ -214,6 +215,28 @@
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
       ],
+      contact: [
+        {
+          icon: '',
+          name: 'LinkedIn',
+          link: 'https://www.linkedin.com/in/michelle-ugwu-51996711b/',
+        },
+        {
+          icon: '',
+          name: 'Instagram',
+          link: 'https://www.instagram.com/michie_1001/',
+        },
+        {
+          icon: '',
+          name: 'Github',
+          link: 'https://github.com/Michie1001',
+        },
+        {
+          icon: '',
+          name: 'Stack Overflow',
+          link: 'https://stackoverflow.com/users/story/6276301',
+        },
+      ],
       messageToShow: '',
       messages: [
         'make things beautiful',
@@ -222,9 +245,6 @@
         'draw',
         'write'
       ],
-      portrait: 'require("../assets/logo.png")',
-      about:'yi',
-      contact: 'yo',
       show: 'false'
     }),
   }
