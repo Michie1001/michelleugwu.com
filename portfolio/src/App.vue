@@ -99,8 +99,18 @@ export default {
           }
         }
       }
-      .contacts-section{
+      .skills-section{
         grid-column: 2 / -1;
+        grid-row: 4 / 5;
+        .specific__skills{
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .contacts-section{
+        grid-column: 1 / 2;
         grid-row: 5 / 6;
         display: grid;
         grid-template-columns: 1fr 1fr;

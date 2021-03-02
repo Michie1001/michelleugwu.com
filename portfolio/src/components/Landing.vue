@@ -66,10 +66,13 @@
           </div>
           <div class="skills-section">
             <h3>Skills</h3> <!--to be removed-->
-            <div class="skills"
-            v-for="skill in skills"
-            :key="skill.id">
-              <span>{{skill}}</span>
+            <div class="specific__tools"></div>
+            <div class="specific__skills">
+              <div class="skills"
+                v-for="skill in skills"
+                :key="skill.id">
+                  <p>{{skill}}</p>
+              </div>
             </div>
           </div>
           <div class="contacts-section">
