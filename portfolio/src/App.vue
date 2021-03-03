@@ -112,6 +112,7 @@ export default {
       .contacts-section{
         grid-column: 1 / 2;
         grid-row: 5 / 6;
+        text-align: right;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
