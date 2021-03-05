@@ -165,20 +165,6 @@
 
 
     data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
       experience: [
         {
           role: 'Frontend Engineer',
@@ -284,10 +270,10 @@
       messageToShow: '',
       messages: [
         'make things beautiful',
-        'engineer frontend code',
+        'write code',
         'animate',
-        'draw',
-        'write'
+        'draw sometimes',
+        'deal in fiction'
       ],
       show: 'false'
     }),
