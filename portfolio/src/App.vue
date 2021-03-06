@@ -107,7 +107,11 @@ export default {
       .skills-section{
         grid-column: 2 / -1;
         grid-row: 4 / 5;
-        .specific__skills{
+        font-weight: bold;
+        .specific__skills, .specific__tools{
+          text-align: center;
+          margin-left: 2rem;
+          line-height: 1.5;
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           align-items: center;
@@ -118,12 +122,12 @@ export default {
         grid-column: 1 / 2;
         grid-row: 5 / 6;
         text-align: right;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         .contacts{
+          display: grid;
+          grid-template-columns: 100px 100px;
+          grid-template-rows: 1fr 1fr;
         }
       }
     }

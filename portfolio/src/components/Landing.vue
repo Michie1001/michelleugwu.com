@@ -39,7 +39,6 @@
         </h2>
         <div class="grid-area">
           <div class="experience-section">
-            <h3>Experience</h3> <!--to be removed-->
             <div class="experience"
             v-for="exp in experience"
             :key="exp.id">
@@ -48,7 +47,6 @@
             </div>
           </div>
           <div class="education-section">
-            <h3>Education</h3> <!--to be removed-->
             <div class="education"
             v-for="edu in education"
             :key="edu.id">
@@ -57,7 +55,6 @@
             </div>
           </div>
           <div class="achievements-section">
-            <h3>Achievements</h3> <!--to be removed-->
             <div class="achievements"
             v-for="ach in achievements"
             :key="ach.id">
@@ -65,9 +62,7 @@
             </div>
           </div>
           <div class="skills-section">
-            <h3>Skills</h3> <!--to be removed-->
-            <div class="specific__tools"></div>
-            <v-divider></v-divider>
+            <span>Skills: </span>
             <div class="specific__skills">
               <div class="skills"
                 v-for="skill in skills"
@@ -75,9 +70,19 @@
                   <p>{{skill}}</p>
               </div>
             </div>
+            <v-divider></v-divider>
+            <br>
+            <span>Tools: </span>
+            <div class="specific__tools">
+              <div class="tools"
+                v-for="tool in tools"
+                :key="tool.id">
+                  <p>{{tool}}</p>
+              </div>
+            </div>
           </div>
           <div class="contacts-section">
-            <h3>Contacts</h3> <!--to be removed-->
+            <h3>Reach me here: </h3>
             <div class="contacts"
             v-for="reach in contact"
             :key="reach.id">
@@ -211,6 +216,21 @@
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
       ],
+      tools: [
+        'SEO',
+        'Figma',
+        'Adobe AfterEffects',
+        'Adobe Photoshop',
+        'Adobe Illustrator',
+        'Adobe Lightroom',
+        'Adobe Spark',
+        'Actions on Google',
+        'Mailchimp',
+        'Email on Acid',
+        'Canva',
+        'Linux',
+
+      ],
       skills: [
         'VueJS',
         'Laravel',
@@ -220,19 +240,6 @@
         'Bootstrap',
         'Vuetify',
         'TypeScript',
-        'SEO',
-        'Figma',
-        'Adobe AfterEffects',
-        'Adobe Photoshop',
-        'Adobe Illustrator',
-        'Adobe Lightroom',
-        'Adobe Spark',
-        'Filmora',
-        'Actions on Google',
-        'Mailchimp',
-        'Email on Acid',
-        'Canva',
-        'Linux',
         'Sketch Art',
         'Creative writing',
         'Fluent English',
