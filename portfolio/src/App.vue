@@ -91,11 +91,16 @@ export default {
         text-align: center;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        .achievements{
+          padding: 0 4rem;
+        }
         .achievements span{
           margin-bottom: 1rem;
           font-weight: bold;
           &::before{
-            content: '• '
+            content: '• ';
+            font-size: 21px;
+            color: #000;
           }
         }
       }

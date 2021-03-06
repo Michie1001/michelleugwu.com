@@ -67,6 +67,7 @@
           <div class="skills-section">
             <h3>Skills</h3> <!--to be removed-->
             <div class="specific__tools"></div>
+            <v-divider></v-divider>
             <div class="specific__skills">
               <div class="skills"
                 v-for="skill in skills"
@@ -200,14 +201,12 @@
         },
       ],
       achievements: [
-        'National Youth Service',
-        'Participated in ALCwithGoogle and ALCwithMicrosoft',
         'Co-pioneer/co-organizer of forLoopUniben in the University of Benin',
-        'Participated in the first Frontstack Challenge (Responsive Web Design)',
-        'Interviewed at Microsoft',
         'Recognized by Figma as one of the top 5 most consistent Figma users in Nigeria in 2018',
         'Participated in an essay competition on the ‘Formal Education and the Nigerian Youth’ for Sigma Club, Ibadan, Nigeria',
+        'Interviewed at Microsoft',
         'Participated in the University of Benin 2015 Spelling Bee',
+        'Participated in ALCwithGoogle and ALCwithMicrosoft',
         'Public Relations Officer for NACOSS in my 200level',
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
