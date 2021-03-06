@@ -59,11 +59,12 @@ export default {
       background-image: linear-gradient(#010107, #f1f1f1);
     }
     .grid-area{
-      margin: 2rem auto;
+      margin: 2rem 4rem;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(5, 1fr);
       align-items: center;
+      justify-content: center;
       h3{
         margin: 0 3rem 1rem 3rem;
       }

@@ -2,7 +2,7 @@
   <div class="landing">
     <v-img
       dark
-      min-height="600px"
+      max-height="650px"
       :src="require('../assets/starry.jpg')"
     >
       <!-- <div class="logo-area">
