@@ -54,8 +54,9 @@ export default {
     }
     .about{
       width: 100%;
-      margin-top: 2rem;
+      padding-top: 2rem;
       text-align: center;
+      background-image: linear-gradient(#010107, #f1f1f1);
     }
     .grid-area{
       margin: 2rem auto;

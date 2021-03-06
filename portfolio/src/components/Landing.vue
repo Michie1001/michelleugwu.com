@@ -2,7 +2,7 @@
   <div class="landing">
     <v-img
       dark
-      max-height="500px"
+      min-height="600px"
       :src="require('../assets/starry.jpg')"
     >
       <!-- <div class="logo-area">
@@ -32,8 +32,7 @@
       </v-layout>
     </v-img>
 
-    <v-container>
-      <v-row>
+      <div>
         <h2 class="about">
           About
         </h2>
@@ -84,19 +83,20 @@
           <div class="contacts-section">
             <h3>Reach me here: </h3>
             <div class="contacts"
-            v-for="reach in contact"
-            :key="reach.id">
-              <a :href="reach.link">
-                <h5>
-                  <span>{{reach.icon}}</span>
-                  {{reach.name}}
-                </h5>
+              v-for="reach in contact"
+              :key="reach.id">
+                <a :href="reach.link">
+                  <h5>
+                    <span>{{reach.icon}}</span>
+                    {{reach.name}}
+                  </h5>
               </a>
             </div>
           </div>
         </div>
-      </v-row>
+      </div>
 
+    <v-container>
       <v-row justify="center" class="text-center">
         <h2>Projects</h2>
         
