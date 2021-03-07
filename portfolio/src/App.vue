@@ -3,8 +3,6 @@
     <v-main>
       <Landing/>
     </v-main>
-    <v-bottom-navigation>
-    </v-bottom-navigation>
   </v-app>
 </template>
 
@@ -123,13 +121,14 @@ export default {
       .contacts-section{
         grid-column: 1 / 2;
         grid-row: 5 / 6;
-        text-align: right;
         justify-content: center;
         align-items: center;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        h3{
+          grid-column: 1 / -1;
+        }
         .contacts{
-          display: grid;
-          grid-template-columns: 100px 100px;
-          grid-template-rows: 1fr 1fr;
         }
       }
     }

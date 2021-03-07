@@ -162,6 +162,8 @@
       </v-row>
 
     </v-container>
+    <v-bottom-navigation>
+    </v-bottom-navigation>
   </div>
 </template>
 
@@ -219,6 +221,7 @@
       tools: [
         'SEO',
         'Figma',
+        'Postman',
         'Adobe AfterEffects',
         'Adobe Photoshop',
         'Adobe Illustrator',
@@ -228,7 +231,6 @@
         'Mailchimp',
         'Email on Acid',
         'Canva',
-        'Linux',
 
       ],
       skills: [
