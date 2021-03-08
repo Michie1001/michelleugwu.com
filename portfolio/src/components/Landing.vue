@@ -31,8 +31,26 @@
         </v-container>
       </v-layout>
     </v-img>
+    <header>
+      <div class="triangle left">
+        <h1
+          :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
+          class="main-heading">
+          Hi, I'm Michelle <br>and I 
+          <span class="messages"></span>
+        </h1>
+      </div>
+      <div class="triangle right">
+        <h1
+          :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
+          class="main-heading">
+          Hi, I'm Michelle <br>and I 
+          <span class="messages"></span>
+        </h1>
+      </div>
+    </header>
 
-      <div>
+      <div class="main-content">
         <h2 class="about">
           About
         </h2>
