@@ -34,6 +34,7 @@ export default {
   }
   .landing{
     background-color:#f1f1f1;
+    // background: linear-gradient(to top, #18387c 0%, #e9eff4 100%);
     .logo-area{
       height: 80px;
       width: 60px;
@@ -41,7 +42,6 @@ export default {
       margin: 20px;
     }
     header{
-      background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
       position:fixed;
       width:100%;
       height:100%;
@@ -132,7 +132,7 @@ export default {
       width: 100%;
       padding-top: 2rem;
       text-align: center;
-      background-image: linear-gradient(#010107, #f1f1f1);
+      // background-image: linear-gradient(#010107, #f1f1f1);
     }
     .grid-area{
       margin: 2rem 4rem;
