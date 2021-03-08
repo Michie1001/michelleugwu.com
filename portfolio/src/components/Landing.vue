@@ -1,10 +1,10 @@
 <template>
   <div class="landing">
-    <v-img
+    <!-- <v-img
       dark
       max-height="650px"
       :src="require('../assets/starry.jpg')"
-    >
+    > -->
       <!-- <div class="logo-area">
         <v-img
           class="shrink mr-2"
@@ -13,7 +13,7 @@
           :src="require('../assets/logo.svg')"
         ></v-img>
       </div> there's no need for a logo at the moment--> 
-      <v-layout fill-height align-center>
+<!--       <v-layout fill-height align-center>
         <v-container>
           <v-row align="center" justify="center" class="white--text text-center">
             <v-col cols="12">
@@ -22,15 +22,19 @@
                 class="main-heading"
               >Hi, I'm Michelle <br>and I 
               <span class="messages"></span>
-              </h1>
+              </h1> -->
               <!-- <div
                 :class="{'headline': $vuetify.breakpoint.smAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
               >I make applications.</div> -->
-            </v-col>
+           <!--  </v-col>
           </v-row>
         </v-container>
       </v-layout>
-    </v-img>
+    </v-img> -->
+
+    <!-- Fix up the scrollable one for mobile only. -->
+
+    
     <header>
       <div class="triangle left">
         <h1
