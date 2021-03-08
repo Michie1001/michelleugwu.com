@@ -40,14 +40,92 @@ export default {
       position: absolute;
       margin: 20px;
     }
-    .main-heading{
-      line-height: 1.3;
-      white-space: nowrap;
-      overflow: hidden;
-      .messages::before{
-        font-weight: bold;
-        content: ' ';
-        animation: openclose 5s ease infinite;
+    header{
+      background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      position:fixed;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      color: #fff;
+      .main-heading{
+        position:relative;
+        z-index: 10;
+        line-height: 1.3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        letter-spacing:1pt;
+        font-family: 'Montserrat', sans-serif;
+        .messages::before{
+          font-weight: bold;
+          content: ' ';
+          animation: openclose 5s ease infinite;
+        }
+      }
+      button{
+        position:relative;
+        z-index: 10;
+        transition: all .8s cubic-bezier(0.645, 0.045, 0.355, 1),
+                   transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+                   box-shadow .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        overflow:hidden;
+        &:before, &:after{
+          transition: all .8s cubic-bezier(0.645, 0.045, 0.355, 1);
+          top: 17px;
+          position: absolute;
+        }
+        &:before{
+          opacity:1;
+          left: 53px;
+        }
+        
+        &:after{
+          opacity: 0;
+          left: 0;
+        }
+      }
+      .triangle{
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: linear-gradient(to top, #09203f 0%, #537895 100%);
+        transition: all .8s cubic-bezier(0.645, 0.045, 0.355, 1);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        pointer-events:none;
+        
+        &.left{
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        }
+        
+        &.right{
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+        }
+      }
+      &.open{
+        .triangle{
+              
+          &.left{
+            clip-path: polygon(0 0, 0 100%, 0 100%);
+          }
+          
+          &.right{
+            clip-path: polygon(100% 0, 100% 0, 100% 100%);
+          }
+        }
+        
+        button{
+          display: none;
+        }
       }
     }
     .about{
@@ -218,22 +296,22 @@ export default {
     }
     @keyframes openclose {
       0% {
-        content: 'make things beautiful';
+        content: 'creative';
       }
-      20% {
-        content: 'engineer frontend code';
+      35% {
+        content: 'frontend engineer';
       }
       40% {
-        content: 'animate';
+        content: 'animator';
       }
       60% {
-        content: 'draw';
+        content: 'artist';
       }
       80% {
-        content: 'write';
+        content: 'writer';
       }
       100% {
-        content: '...';
+        content: 'editor';
       }
     }
   }

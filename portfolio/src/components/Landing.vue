@@ -34,24 +34,27 @@
 
     <!-- Fix up the scrollable one for mobile only. -->
 
-    
+
     <header>
       <div class="triangle left">
         <h1
           :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
           class="main-heading">
-          Hi, I'm Michelle <br>and I 
-          <span class="messages"></span>
+          Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
+          and I am obsessed with the ocean,<br> 
+          fiction, space, animals and art. <br>
         </h1>
       </div>
       <div class="triangle right">
         <h1
           :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
           class="main-heading">
-          Hi, I'm Michelle <br>and I 
-          <span class="messages"></span>
+          Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
+          and I am obsessed with the ocean,<br> 
+          fiction, space, animals and art. <br>
         </h1>
       </div>
+      <button v-on:click="revealMain" id="revealMain">View my personal site</button>
     </header>
 
       <div class="main-content">
@@ -334,7 +337,14 @@
         'draw sometimes',
         'deal in fiction'
       ],
-      show: 'false'
+      show: 'false',
     }),
+
+    methods: {
+      revealMain: function(){
+        let revealMain = document.querySelector('header');
+        revealMain.classList.add('open');
+      }
+    },
   }
 </script>
