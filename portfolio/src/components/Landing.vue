@@ -142,6 +142,11 @@
           </div>
         </div>
       </div>
+
+      <v-container>
+        <v-row justify="center" class="text-center">
+        </v-row>
+      </v-container>
     </div>
 
     <v-container>
@@ -351,6 +356,33 @@
           name: 'Twitter',
           link: 'https://twitter.com/Michie1001',
         },
+      ],
+      project:[
+        {
+          preview: '',
+          name: 'Whistling Pine - Nexter',
+          description: '',
+          link:'https://whistlingpine-nexter.netlify.app/',
+        },
+        {
+          preview: '',
+          name: 'Road Runner',
+          description: '',
+          link:'https://theroadrunner.netlify.app/',
+        },
+        {
+          preview: '',
+          name: 'Shalom',
+          description: '',
+          link:'https://shalom-by-mist.netlify.app/',
+        },
+        {
+          preview: '',
+          name: '',
+          description: '',
+          link:'',
+        },
+        
       ],
       messageToShow: '',
       messages: [
