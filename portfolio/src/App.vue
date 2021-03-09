@@ -111,6 +111,8 @@ export default {
         }
       }
       &.open{
+        height: 1%;
+        width: 1%;
         .triangle{
               
           &.left{
@@ -156,7 +158,7 @@ export default {
         margin: 0 3rem 1rem 3rem;
       }
       span{
-        color: #0c107c;
+        color: #010c22;
       }
       p{
         color: #777;
@@ -216,8 +218,23 @@ export default {
         grid-template-columns: 200px 200px;
         h3{
           grid-column: 1 / -1;
+          text-align: center;
         }
         .contacts{
+          font-size: 1.3rem;
+          text-align: center;
+          line-height: 1;
+          margin: 1rem 0;
+          h5{
+            color: #777;
+          }
+          i{
+            color: #010c22;
+            font-size: 2rem;
+          }
+          &:last-child {
+            grid-column: 1/-1;
+          }
         }
       }
     }

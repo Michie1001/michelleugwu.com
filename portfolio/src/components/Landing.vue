@@ -132,6 +132,7 @@
               <a :href="reach.link">
                 <h5>
                   <i :class="reach.icon"></i>
+                  <br>
                   {{reach.name}}
                 </h5>
             </a>
