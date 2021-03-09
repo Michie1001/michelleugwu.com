@@ -133,6 +133,18 @@ export default {
       text-align: center;
       // background-image: linear-gradient(#010107, #f1f1f1);
     }
+    // .anatomy{
+    //   svg {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //   }
+    // }
     .grid-area{
       margin: 2rem 4rem;
       display: grid;
