@@ -58,28 +58,31 @@
     </header>
 
     <div class="main-content">
-      <h2 class="about">
-        About Michelle
-      </h2>
-      <div class="anatomy">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
-          <rect width="100%" height="100%" fill="#E7E7E8"/>
-          <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/a.svg" width="100%" height="100%" />
-        </svg>
+      <!-- <nav class="about">
+        <div class="anatomy">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+            <rect width="100%" height="100%" fill="#E7E7E8"/>
+            <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/a.svg" width="100%" height="100%" />
+          </svg>
 
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
-          <defs>
-            <clipPath id="mask">
-              <circle id="mask-circle" cx="50%" cy="50%" r="8%" style="fill: #ffffff"/>
-            </clipPath>
-          </defs>
-          <g clip-path="url(#mask)">
-            <rect width="100%" height="100%" fill="#272730"/>
-            <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/b.svg" width="100%" height="100%" />
-          </g>
-          <circle id="circle-shadow" cx="50%" cy="50%" r="8%" style="stroke: #fff; fill: transparent; stroke-width: 5;" />
-        </svg>
-      </div>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+            <defs>
+              <clipPath id="mask">
+                <circle id="mask-circle" cx="50%" cy="50%" r="8%" style="fill: #ffffff"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#mask)">
+              <rect width="100%" height="100%" fill="#272730"/>
+              <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/b.svg" width="100%" height="100%" />
+            </g>
+            <circle id="circle-shadow" cx="50%" cy="50%" r="8%" style="stroke: #fff; fill: transparent; stroke-width: 5;" />
+          </svg>
+        </div>
+        
+        <h2>
+          About Michelle
+        </h2>
+      </nav> -->
       <div class="grid-area">
         <div class="experience-section">
           <div class="experience"

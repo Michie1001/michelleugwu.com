@@ -52,6 +52,7 @@ export default {
       justify-content:center;
       align-items:center;
       color: #fff;
+      z-index: 9;
       .main-heading{
         position:relative;
         z-index: 10;
@@ -90,7 +91,7 @@ export default {
       }
       .triangle{
         position:absolute;
-        z-index:1;
+        z-index:10;
         top:0;
         left:0;
         width:100%;
@@ -129,26 +130,32 @@ export default {
         }
       }
     }
-    .about{
-      width: 100%;
-      padding-top: 2rem;
-      text-align: center;
-      // background-image: linear-gradient(#010107, #f1f1f1);
-    }
-    // .anatomy{
-    //   svg {
+    // .about{
+    //   width: 100%;
+    //   min-height: 60vh;
+    //   padding-top: 2rem;
+    //   text-align: center;
+    //   position: relative;
+    //   z-index: 0;
+    //   .anatomy{
+    //     svg {
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       right: 0;
+    //       bottom: 0;
+    //       display: block;
+    //       width: 100%;
+    //       height: 100%;
+    //     }
+    //   }
+    //   h2{
+    //     float: right;
     //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
     //   }
     // }
     .grid-area{
-      margin: 2rem 4rem;
+      padding: 2rem 4rem;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(5, 1fr);
