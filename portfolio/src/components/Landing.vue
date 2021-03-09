@@ -131,7 +131,7 @@
             :key="reach.id">
               <a :href="reach.link">
                 <h5>
-                  <span>{{reach.icon}}</span>
+                  <i :class="reach.icon"></i>
                   {{reach.name}}
                 </h5>
             </a>
@@ -323,27 +323,27 @@
       ],
       contact: [
         {
-          icon: '',
+          icon: 'fab fa-linkedin-in',
           name: 'LinkedIn',
           link: 'https://www.linkedin.com/in/michelle-ugwu-51996711b/',
         },
         {
-          icon: '',
+          icon: 'fab fa-instagram',
           name: 'Instagram',
           link: 'https://www.instagram.com/michie_1001/',
         },
         {
-          icon: '',
+          icon: 'fab fa-github',
           name: 'Github',
           link: 'https://github.com/Michie1001',
         },
         {
-          icon: '',
+          icon: 'fab fa-stack-overflow',
           name: 'Stack Overflow',
           link: 'https://stackoverflow.com/users/story/6276301',
         },
         {
-          icon: '',
+          icon: 'fab fa-twitter',
           name: 'Twitter',
           link: 'https://twitter.com/Michie1001',
         },
