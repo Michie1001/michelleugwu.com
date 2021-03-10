@@ -244,6 +244,9 @@ export default {
           }
         }
       }
+      div[class*="section"]{
+        
+      }
     }
     // .footer{
     //   z-index: 1;
