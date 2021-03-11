@@ -58,8 +58,8 @@
     </header>
 
     <div class="main-content">
-      <!-- <nav class="about">
-        <div class="anatomy">
+      <nav class="about">
+        <!-- <div class="anatomy">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
             <rect width="100%" height="100%" fill="#E7E7E8"/>
             <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/a.svg" width="100%" height="100%" />
@@ -77,12 +77,12 @@
             </g>
             <circle id="circle-shadow" cx="50%" cy="50%" r="8%" style="stroke: #fff; fill: transparent; stroke-width: 5;" />
           </svg>
-        </div>
+        </div> -->
         
         <h2>
           About Michelle
         </h2>
-      </nav> -->
+      </nav>
       <div class="grid-area">
         <div class="experience-section">
           <div class="experience"
@@ -108,7 +108,7 @@
           </div>
         </div>
         <div class="skills-section">
-          <span>Skills: </span>
+          <span>Skills </span>
           <div class="specific__skills">
             <div class="skills"
               v-for="skill in skills"
@@ -118,7 +118,7 @@
           </div>
           <v-divider></v-divider>
           <br>
-          <span>Tools: </span>
+          <span>Tools </span>
           <div class="specific__tools">
             <div class="tools"
               v-for="tool in tools"

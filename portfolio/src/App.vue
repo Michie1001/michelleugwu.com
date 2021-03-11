@@ -130,30 +130,30 @@ export default {
         }
       }
     }
-    // .about{
-    //   width: 100%;
-    //   min-height: 60vh;
-    //   padding-top: 2rem;
-    //   text-align: center;
-    //   position: relative;
-    //   z-index: 0;
-    //   .anatomy{
-    //     svg {
-    //       position: absolute;
-    //       top: 0;
-    //       left: 0;
-    //       right: 0;
-    //       bottom: 0;
-    //       display: block;
-    //       width: 100%;
-    //       height: 100%;
-    //     }
-    //   }
-    //   h2{
-    //     float: right;
-    //     position: absolute;
-    //   }
-    // }
+    .about{
+      width: 100%;
+      min-height: 45vh;
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      // .anatomy{
+      //   svg {
+      //     position: absolute;
+      //     top: 0;
+      //     left: 0;
+      //     right: 0;
+      //     bottom: 0;
+      //     display: block;
+      //     width: 100%;
+      //     height: 100%;
+      //   }
+      // }
+      h2{
+        font-size: 4rem;
+      }
+    }
     .grid-area{
       padding: 2rem 4rem;
       display: grid;
@@ -161,15 +161,19 @@ export default {
       grid-template-rows: repeat(5, 1fr);
       align-items: center;
       justify-content: center;
+      position: relative;
       h3{
         margin: 0 3rem 1rem 3rem;
+        font-size: 24px;
       }
       span{
         color: #010c22;
+        font-size: 21px;
       }
       p{
         color: #777;
         margin-bottom: 1rem;
+        font-size: 21px;
       }
       a{
         text-decoration: none;
@@ -206,6 +210,7 @@ export default {
         grid-column: 2 / -1;
         grid-row: 4 / 5;
         font-weight: bold;
+        text-align: center;
         .specific__skills, .specific__tools{
           text-align: center;
           margin-left: 2rem;
@@ -214,6 +219,9 @@ export default {
           grid-template-columns: repeat(5, 1fr);
           align-items: center;
           justify-content: center;
+          p{
+            font-size: 16px;
+          }
         }
       }
       .contacts-section{
@@ -245,7 +253,17 @@ export default {
         }
       }
       div[class*="section"]{
-        
+        transition: .5s;
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+      div[class*="section"]:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: right;
+        transition: .5s;
       }
     }
     // .footer{
