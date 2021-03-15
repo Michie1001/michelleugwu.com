@@ -80,8 +80,14 @@
         </div> -->
         
         <h2>
-          About Michelle
+          About Michelle (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume)
         </h2>
+        <v-img
+          class="shrink mr-2"
+          contain
+          transition="scale-transition"
+          :src="require('../assets/imgs/profileAvatar.svg')"
+        ></v-img>
       </nav>
       <div class="grid-area">
         <div class="experience-section">
@@ -203,7 +209,7 @@
       </v-row>
 
       <v-row>
-        <!-- <a
+        <a
           v-for="(eco, i) in ecosystem"
           :key="i"
           :href="eco.href"
@@ -211,7 +217,7 @@
           target="_blank"
         >
           {{ eco.text }}
-        </a> -->
+        </a>
       </v-row>
 
     </v-container>
