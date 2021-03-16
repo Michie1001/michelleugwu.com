@@ -54,7 +54,7 @@
           fiction, space, animals and art. <br>
         </h1>
       </div>
-      <button v-on:click="revealMain">View my personal site</button>
+      <button v-on:click="revealMain">Explore</button>
     </header>
 
     <div class="main-content">
@@ -80,133 +80,107 @@
         </div> -->
         
         <h2>
-          About Michelle (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume)
+          About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h2>
-        <v-img
-          class="shrink mr-2"
-          contain
-          transition="scale-transition"
-          :src="require('../assets/imgs/profileAvatar.svg')"
-        ></v-img>
       </nav>
-      <div class="grid-area">
-        <div class="experience-section">
-          <div class="experience"
-          v-for="exp in experience"
-          :key="exp.id">
-            <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
-            <p>{{exp.date}}</p>
-          </div>
-        </div>
-        <div class="education-section">
-          <div class="education"
-          v-for="edu in education"
-          :key="edu.id">
-            <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
-            <p>{{edu.date}}</p>
-          </div>
-        </div>
-        <div class="achievements-section">
-          <div class="achievements"
-          v-for="ach in achievements"
-          :key="ach.id">
-            <span>{{ach}}</span>
-          </div>
-        </div>
-        <div class="skills-section">
-          <span>Skills </span>
-          <div class="specific__skills">
-            <div class="skills"
-              v-for="skill in skills"
-              :key="skill.id">
-                <p>{{skill}}</p>
+      <div class="yellow-bar">
+        <div class="illustration-examples">2 images</div>
+        <div class="grid-area">
+          <div class="experience-section">
+            <div class="experience"
+            v-for="exp in experience"
+            :key="exp.id">
+              <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
+              <p>{{exp.date}}</p>
             </div>
           </div>
-          <v-divider></v-divider>
-          <br>
-          <span>Tools </span>
-          <div class="specific__tools">
-            <div class="tools"
-              v-for="tool in tools"
-              :key="tool.id">
-                <p>{{tool}}</p>
+          <div class="education-section">
+            <div class="education"
+            v-for="edu in education"
+            :key="edu.id">
+              <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
+              <p>{{edu.date}}</p>
             </div>
           </div>
-        </div>
-        <div class="contacts-section">
-          <h3>Reach me here: </h3>
-          <div class="contacts"
-            v-for="reach in contact"
-            :key="reach.id">
-              <a :href="reach.link">
-                <h5>
-                  <i :class="reach.icon"></i>
-                  <br>
-                  {{reach.name}}
-                </h5>
-            </a>
+          <div class="achievements-section">
+            <div class="achievements"
+            v-for="ach in achievements"
+            :key="ach.id">
+              <span>{{ach}}</span>
+            </div>
+          </div>
+          <div class="skills-section">
+            <span>Skills </span>
+            <div class="specific__skills">
+              <div class="skills"
+                v-for="skill in skills"
+                :key="skill.id">
+                  <p>{{skill}}</p>
+              </div>
+            </div>
+            <v-divider></v-divider>
+            <br>
+            <span>Tools </span>
+            <div class="specific__tools">
+              <div class="tools"
+                v-for="tool in tools"
+                :key="tool.id">
+                  <p>{{tool}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-section">
+            <h3>Reach me here: </h3>
+            <div class="contacts"
+              v-for="reach in contact"
+              :key="reach.id">
+                <a :href="reach.link">
+                  <h5>
+                    <i :class="reach.icon"></i>
+                    <br>
+                    {{reach.name}}
+                  </h5>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <v-container>
-        <v-row justify="center" class="text-center">
-        </v-row>
-      </v-container>
+      <div class="works-section">
+        <div class="fixed-banner"></div>
+        <div class="works" v-for="(work, i) in works"
+          :key="i">
+          <v-img
+            dark
+            max-height="650px"
+            :src="work.img"
+          >
+            <p>{{work.description}}</p>
+            <button>
+              <a :href="work.link">Go to Project</a>
+            </button>
+          </v-img>
+        </div>
+      </div>
+
+      <div class="large-illustrated-banner">
+        <v-img></v-img>
+      </div>
+      <div class="illustrations-section">
+        <div class="yellow-bar">
+          <div class="illustration-examples">2 images</div>
+          <h2>Illustrations</h2>
+          <div class="illustration-grid">12 artworks in the whistling pine scattered grid format but a bit bigger</div>
+        </div>
+      </div>
+
+      <div class="reel">
+        <p>First animation reel coming soon</p>
+      </div>
+
     </div>
 
-    <v-container>
-      <v-row justify="center" class="text-center">
-        <h2>Projects</h2>
-        
-        <div class="works_cards" style="display: block">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange lighten-2"
-                text
-              >
-                Explore
-              </v-btn>
-
-              <v-spacer></v-spacer>
-
-              <v-btn
-                icon
-                @click="show = !show"
-              >
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-              </v-btn>
-            </v-card-actions>
-
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-
-                <v-card-text>
-                  I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
-        </div>
-      </v-row>
+    
 
       <v-row>
         <a
@@ -220,8 +194,7 @@
         </a>
       </v-row>
 
-    </v-container>
-    <!-- <v-bottom-navigation class="footer">
+     <!-- <v-bottom-navigation class="footer">
       <div class="bubbles"
         v-for="i < 128;"
         :key="i">
@@ -229,6 +202,15 @@
       </div>
       <div class="content">
         <div>
+          <v-img
+            class="shrink mr-2"
+            contain
+            transition="scale-transition"
+            :src="require('../assets/imgs/profileAvatar.svg')"
+          ></v-img>
+          <div>
+            <p>Michelle Ugwu (c) 2021</p>
+          </div>
             <div><b>Eldew</b><a href="#">Secuce</a><a href="#">Drupand</a><a href="#">Oceash</a><a href="#">Ugefe</a><a href="#">Babed</a></div>
 
             <div><b>Spotha</b><a href="#">Miskasa</a><a href="#">Agithe</a><a href="#">Scesha</a><a href="#">Lulle</a></div>

@@ -79,7 +79,8 @@ export default {
         overflow:hidden;
         font-weight: bold;
         background-color: #fff;
-        padding: 1rem;
+        margin-top: 1rem;
+        padding: .5rem 1.5rem;
         border-radius: 50px;
         color: #010c22;
         box-shadow: 2px 1px 20px 0 rgba(#000, 0.5);
