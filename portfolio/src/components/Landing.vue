@@ -212,7 +212,8 @@
       </div>
 
       <div class="reel">
-        <p>First animation reel coming soon</p>
+        <p>Send me an email, let's work together.</p>
+        <p>michieugwu@gmail.com</p>
       </div>
 
     </div>
