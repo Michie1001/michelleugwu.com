@@ -158,6 +158,30 @@ export default {
         font-size: 4rem;
       }
     }
+    .roundbg{
+      background-color: #f1f1fe;
+      border-radius: 50%;
+      z-index: 1;
+      position: absolute;
+      top: 40vh;
+      left: 0;
+      height: 300px;
+      width: 300px;
+    }
+    .big{
+      top: -5vh;
+      left: 70vw;
+      transform: scale(2);
+      background-color: #f1e2e1;
+      z-index: 0;
+    }
+    .small{
+      top: 2vh;
+      left: 21vw;
+      transform: scale(.3);
+      background-color: #01c2ea;
+      opacity: .3;
+    }
     .yellow-bar{
       background-color: #f1f1f1;
       clip-path: ellipse(70% 100% at 50% 100%);
@@ -332,7 +356,13 @@ export default {
         .preview-image{
           filter: blur;
           color: blue;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
           h3{
+            font-size: 22px;
           }
           p{}
           button{}

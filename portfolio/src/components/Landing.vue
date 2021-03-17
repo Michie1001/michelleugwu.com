@@ -58,6 +58,7 @@
     </header>
 
     <div class="main-content">
+      <div class="roundbg big"></div>
       <nav class="about">
         <!-- <div class="anatomy">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
@@ -83,6 +84,8 @@
           About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h2>
       </nav>
+      <div class="roundbg"></div>
+      <div class="roundbg small"></div>
       <div class="yellow-bar">
       </div>
 
@@ -181,8 +184,8 @@
             <v-img
               class="preview-image"
               dark
-              cover
-              max-height="650px"
+              contain
+              height="600px"
               :src="work.preview"
             >
               <h3>{{work.name}}</h3>
@@ -372,7 +375,7 @@
       ],
       works:[
         {
-          preview: 'require(\'../assets/whistling-pine.png\')',
+          preview: 'require(\'../assets/imgs/whistling-pine.png\')',
           name: 'Whistling Pine - Nexter',
           description: 'A play on CSS grids for a make believe real estate management company',
           link:'https://whistlingpine-nexter.netlify.app/',
@@ -391,8 +394,44 @@
         },
         {
           preview: '',
-          name: '',
-          description: '',
+          name: 'Hotels.ng',
+          description: 'I worked on numerous pages during my time there, this is a montage of some of the best I did',
+          link:'hotels.ng',
+        },
+        {
+          preview: '',
+          name: 'Mist\'s playground',
+          description: 'My playground and old portfolio site showing how I\'ve progressed so far',
+          link:'',
+        },
+        {
+          preview: '',
+          name: 'nepa.ng',
+          description: 'A product I was part of the team for in Hotels.ng',
+          link:'',
+        },
+        {
+          preview: '',
+          name: 'Pangaea',
+          description: 'I created this for an assessment test',
+          link:'',
+        },
+        {
+          preview: '',
+          name: 'Telex',
+          description: 'A project I was a part of the team for at Hotels.ng',
+          link:'',
+        },
+        {
+          preview: '',
+          name: 'Movie poster',
+          description: 'A work done with Adobe Stock',
+          link:'',
+        },
+        {
+          preview: '',
+          name: 'Embo',
+          description: 'A gaming enterprise',
           link:'',
         },
         
