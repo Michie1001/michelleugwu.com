@@ -156,6 +156,7 @@ export default {
       // }
       h2{
         font-size: 4rem;
+        animation: pulse 2s ease infinite;
       }
     }
     .roundbg{
@@ -233,6 +234,10 @@ export default {
         text-align: right;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+      }
+      .babe{
+        grid-column: 2/-1;
+        grid-row: 1/2;
       }
       .education-section{
         grid-column: 2 / -1;
@@ -451,6 +456,17 @@ export default {
       }
       100% {
         bottom:var(--distance, 10rem);
+      }
+    }
+    @keyframes pulse {
+      0%{
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100%{
+        transform: scale(1);
       }
     }
     @keyframes openclose {

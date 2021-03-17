@@ -110,6 +110,15 @@
           </div>
         </div>
 
+        <v-img
+          class="babe"
+          dark
+          contain
+          height= "400"
+          width= "300"
+          :src="require('../assets/imgs/babe.png')"
+        ></v-img>
+
         <div class="education-section">
           <div class="education"
           v-for="edu in education"
