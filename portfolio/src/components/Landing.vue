@@ -84,94 +84,119 @@
         </h2>
       </nav>
       <div class="yellow-bar">
-        <div class="illustration-examples">2 images</div>
-        <div class="grid-area">
-          <div class="experience-section">
-            <div class="experience"
-            v-for="exp in experience"
-            :key="exp.id">
-              <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
-              <p>{{exp.date}}</p>
+      </div>
+
+      <div class="titlePhoto">
+          <v-img
+            dark
+            contain
+            height= "200"
+            width= "300"
+            :src="require('../assets/imgs/kitty-sticker.png')"
+          ></v-img>
+      </div>
+
+      <div class="grid-area">
+
+        <div class="experience-section">
+          <div class="experience"
+          v-for="exp in experience"
+          :key="exp.id">
+            <h4><span>{{exp.role}}</span> at {{exp.company}}</h4>
+            <p>{{exp.date}}</p>
+          </div>
+        </div>
+
+        <div class="education-section">
+          <div class="education"
+          v-for="edu in education"
+          :key="edu.id">
+            <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
+            <p>{{edu.date}}</p>
+          </div>
+        </div>
+
+        <div class="achievements-section">
+          <div class="achievements"
+          v-for="ach in achievements"
+          :key="ach.id">
+            <span>{{ach}}</span>
+          </div>
+        </div>
+
+        <v-img
+          class="giant"
+          dark
+          contain
+          height= "400"
+          width= "300"
+          :src="require('../assets/imgs/giant.png')"
+        ></v-img>
+
+        <div class="skills-section">
+          <span>Skills </span>
+          <div class="specific__skills">
+            <div class="skills"
+              v-for="skill in skills"
+              :key="skill.id">
+                <p>{{skill}}</p>
             </div>
           </div>
-          <div class="education-section">
-            <div class="education"
-            v-for="edu in education"
-            :key="edu.id">
-              <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
-              <p>{{edu.date}}</p>
-            </div>
-          </div>
-          <div class="achievements-section">
-            <div class="achievements"
-            v-for="ach in achievements"
-            :key="ach.id">
-              <span>{{ach}}</span>
-            </div>
-          </div>
-          <div class="skills-section">
-            <span>Skills </span>
-            <div class="specific__skills">
-              <div class="skills"
-                v-for="skill in skills"
-                :key="skill.id">
-                  <p>{{skill}}</p>
-              </div>
-            </div>
-            <v-divider></v-divider>
-            <br>
-            <span>Tools </span>
-            <div class="specific__tools">
-              <div class="tools"
-                v-for="tool in tools"
-                :key="tool.id">
-                  <p>{{tool}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="contacts-section">
-            <h3>Reach me here: </h3>
-            <div class="contacts"
-              v-for="reach in contact"
-              :key="reach.id">
-                <a :href="reach.link">
-                  <h5>
-                    <i :class="reach.icon"></i>
-                    <br>
-                    {{reach.name}}
-                  </h5>
-              </a>
+          <v-divider></v-divider>
+          <br>
+          <span>Tools </span>
+          <div class="specific__tools">
+            <div class="tools"
+              v-for="tool in tools"
+              :key="tool.id">
+                <p>{{tool}}</p>
             </div>
           </div>
         </div>
+
+        <div class="contacts-section">
+          <h3>Reach me here: </h3>
+          <div class="contacts"
+            v-for="reach in contact"
+            :key="reach.id">
+              <a :href="reach.link">
+                <h5>
+                  <i :class="reach.icon"></i>
+                  <br>
+                  {{reach.name}}
+                </h5>
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <div class="works-section">
-        <div class="fixed-banner"></div>
-        <div class="works" v-for="(work, i) in works"
-          :key="i">
-          <v-img
-            dark
-            max-height="650px"
-            :src="work.img"
-          >
-            <p>{{work.description}}</p>
-            <button>
-              <a :href="work.link">Go to Project</a>
-            </button>
-          </v-img>
+        <div class="fixed-banner">
+          <h2>Works</h2>
+        </div>
+        <div class="scrollable">
+          <div class="works" v-for="(work, i) in works"
+            :key="i">
+            <v-img
+              class="preview-image"
+              dark
+              cover
+              max-height="650px"
+              :src="work.preview"
+            >
+              <h3>{{work.name}}</h3>
+              <p>{{work.description}}</p>
+              <button>
+                <a :href="work.link">Go to Project</a>
+              </button>
+            </v-img>
+          </div>
         </div>
       </div>
 
       <div class="large-illustrated-banner">
         <v-img></v-img>
-      </div>
-      <div class="illustrations-section">
-        <div class="yellow-bar">
-          <div class="illustration-examples">2 images</div>
-          <h2>Illustrations</h2>
-          <div class="illustration-grid">12 artworks in the whistling pine scattered grid format but a bit bigger</div>
-        </div>
       </div>
 
       <div class="reel">
@@ -345,23 +370,23 @@
           link: 'https://twitter.com/Michie1001',
         },
       ],
-      project:[
+      works:[
         {
-          preview: '',
+          preview: 'require(\'../assets/whistling-pine.png\')',
           name: 'Whistling Pine - Nexter',
-          description: '',
+          description: 'A play on CSS grids for a make believe real estate management company',
           link:'https://whistlingpine-nexter.netlify.app/',
         },
         {
           preview: '',
           name: 'Road Runner',
-          description: '',
+          description: 'Personal project featuring my flexbox playground in a make-believe travel company\'s website',
           link:'https://theroadrunner.netlify.app/',
         },
         {
           preview: '',
           name: 'Shalom',
-          description: '',
+          description: 'Personal project for an airbnb-ish website',
           link:'https://shalom-by-mist.netlify.app/',
         },
         {

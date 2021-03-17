@@ -33,8 +33,9 @@ export default {
     }
   }
   .landing{
-    background-color:#f1f1f1;
-    // background: linear-gradient(to top, #18387c 0%, #e9eff4 100%);
+    // background-color:#f1f1f1;
+    // background: linear-gradient(to top, #010c22 0%, #537895 100%);
+    background: linear-gradient(to top, #18387c 0%, #e9eff4 100%);
     .logo-area{
       height: 80px;
       width: 60px;
@@ -131,10 +132,12 @@ export default {
         }
       }
     }
+    .main-content{
+      position:relative;
+    }
     .about{
       width: 100%;
-      min-height: 45vh;
-      padding-top: 2rem;
+      padding: 10rem 0;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -155,14 +158,35 @@ export default {
         font-size: 4rem;
       }
     }
+    .yellow-bar{
+      background-color: #f1f1f1;
+      clip-path: ellipse(70% 100% at 50% 100%);
+      // On mobile: ellipse(100% 100% at 50% 100%)
+      min-height: 100vh;
+      width: 100vw;
+      z-index: 1;
+      position: absolute;
+
+    }
+    .titlePhoto {
+      position: relative;
+      z-index: 2;
+      margin-top: -4rem;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
     .grid-area{
-      padding: 2rem 4rem;
+      background-color: #f1f1f1;
+      margin-top: 20vh;
+      padding: 0 4rem;
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(5, 1fr);
+      grid-row-gap: 5rem;
       align-items: center;
       justify-content: center;
       position: relative;
+      z-index: 2;
       h3{
         margin: 0 3rem 1rem 3rem;
         font-size: 24px;
@@ -200,12 +224,17 @@ export default {
         .achievements span{
           margin-bottom: 1rem;
           font-weight: bold;
+          font-size: 14px;
           &::before{
             content: '• ';
             font-size: 21px;
             color: #000;
           }
         }
+      }
+      .giant{
+        grid-column: 1/2;
+        grid-row: 4/5;
       }
       .skills-section{
         grid-column: 2 / -1;
@@ -265,6 +294,49 @@ export default {
         left: 0;
         transform-origin: right;
         transition: .5s;
+      }
+    }
+    .works-section{
+      overflow-y: scroll;
+      height: 600px;
+      width: 100vw;
+      .fixed-banner{
+        position: absolute;
+        width: 48vw;
+        height: 600px;
+        background: linear-gradient(to top, #010c22 0%, #537895 50%, #f1f1f1 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        h2{
+          font-size: 64px;
+          font-weight: bold;
+          color: #fff;
+          margin: 0;
+        }
+      }
+      .scrollable{
+        position: relative;
+        background-color: #f1f1f1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 600px);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+
+        .works{
+          grid-column: 2/ -1;
+        }
+        .preview-image{
+          filter: blur;
+          color: blue;
+          h3{
+          }
+          p{}
+          button{}
+        }
       }
     }
     // .footer{
