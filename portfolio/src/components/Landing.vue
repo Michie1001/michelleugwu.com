@@ -1,4 +1,4 @@
-<template>
+<template v-on:scroll.native="onPageEnd">
   <div class="landing">
     <!-- <v-img
       dark
@@ -215,6 +215,10 @@
         <p>Send me an email, let's work together.</p>
         <p>michieugwu@gmail.com</p>
       </div>
+
+      <button class="toTop" v-on:click="toTop">
+        <i class="fas fa-fighter-jet"></i>
+      </button>
 
     </div>
 
@@ -457,11 +461,35 @@
       show: 'false',
     }),
 
+    //Adding the .native up top or adding the created and destroyed
+    //fix my scroll problem just fine either way
+    //I chose less 
+    
+    // created() {
+    //   window.addEventListener('scroll', this.onPageEnd);
+    // },
+    // destroyed() {
+    //   window.addEventListener('scroll', this.onPageEnd);
+    // },
+
     methods: {
       revealMain: function(){
         let revealMain = document.querySelector('header');
         revealMain.classList.add('open');
-      }
+      },
+      onPageEnd: function(){
+        let toTop = document.querySelector('.toTop');
+        if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          toTop.style.display = "block";
+        }
+        else {
+          toTop.style.display = "none";
+        }
+      },
+      toTop:function() {
+        document.body.scrollTop = 0; //for safari
+        document.documentElement.scrollTop = 0; //for chrome
+      },
     },
   }
 </script>

@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
+  html{
+    scroll-behavior: smooth;
+  }
   ul{
     margin: 0;
     padding: 0;
@@ -372,6 +375,28 @@ export default {
           p{}
           button{}
         }
+      }
+    }
+    .toTop{
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 8;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #0d172c;
+      color: white;
+      cursor: pointer;
+      padding: 1rem;
+      box-shadow: 0px 0px 5px 2px #18387c;
+      border-radius: 50%;
+      transform: rotate(-90deg);
+      transition: all 1s ease;
+      &:hover{
+        transform: rotate(270deg);
+        background-color: #1d273c;
       }
     }
     // .footer{
