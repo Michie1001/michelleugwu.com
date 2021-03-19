@@ -159,7 +159,7 @@ export default {
       // }
       h2{
         font-size: 4rem;
-        animation: pulse 2s ease infinite;
+        // animation: pulse 2s ease infinite;
       }
     }
     .roundbg{
@@ -377,6 +377,14 @@ export default {
         }
       }
     }
+    .reel{
+      background-color: #f1f1f1;
+      color: #1d273c;
+      min-height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .toTop{
       display: none;
       position: fixed;
@@ -399,6 +407,16 @@ export default {
         background-color: #1d273c;
       }
     }
+    // .reveal{
+    //   position: relative;
+    //   transform: translateY(150px);
+    //   opacity: 0;
+    //   transition: 1s ease;
+    // }
+    // .reveal.active {
+    //   transform: translateY(0px);
+    //   opacity: 1;
+    // }
     // .footer{
     //   z-index: 1;
     //   --footer-background:#00021a or #010c22;

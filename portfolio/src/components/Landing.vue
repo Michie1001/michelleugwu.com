@@ -57,7 +57,7 @@
       <button v-on:click="revealMain">Explore</button>
     </header>
 
-    <div class="main-content">
+    <div class="main-content" v:on:scroll.native="reveal">
       <div class="roundbg big"></div>
       <nav class="about">
         <!-- <div class="anatomy">
@@ -101,7 +101,7 @@
 
       <div class="grid-area">
 
-        <div class="experience-section">
+        <div class="experience-section reveal">
           <div class="experience"
           v-for="exp in experience"
           :key="exp.id">
@@ -111,7 +111,7 @@
         </div>
 
         <v-img
-          class="babe"
+          class="babe reveal"
           dark
           contain
           height= "400"
@@ -119,7 +119,7 @@
           :src="require('../assets/imgs/babe.png')"
         ></v-img>
 
-        <div class="education-section">
+        <div class="education-section reveal">
           <div class="education"
           v-for="edu in education"
           :key="edu.id">
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="achievements-section">
+        <div class="achievements-section reveal">
           <div class="achievements"
           v-for="ach in achievements"
           :key="ach.id">
@@ -137,7 +137,7 @@
         </div>
 
         <v-img
-          class="giant"
+          class="giant reveal"
           dark
           contain
           height= "400"
@@ -145,7 +145,7 @@
           :src="require('../assets/imgs/giant.png')"
         ></v-img>
 
-        <div class="skills-section">
+        <div class="skills-section reveal">
           <span>Skills </span>
           <div class="specific__skills">
             <div class="skills"
@@ -166,7 +166,7 @@
           </div>
         </div>
 
-        <div class="contacts-section">
+        <div class="contacts-section reveal">
           <h3>Reach me here: </h3>
           <div class="contacts"
             v-for="reach in contact"
@@ -223,19 +223,6 @@
     </div>
 
     
-
-      <v-row>
-        <a
-          v-for="(eco, i) in ecosystem"
-          :key="i"
-          :href="eco.href"
-          class="subheading mx-3"
-          target="_blank"
-        >
-          {{ eco.text }}
-        </a>
-      </v-row>
-
      <!-- <v-bottom-navigation class="footer">
       <div class="bubbles"
         v-for="i < 128;"
@@ -464,7 +451,7 @@
     //Adding the .native up top or adding the created and destroyed
     //fix my scroll problem just fine either way
     //I chose less 
-    
+
     // created() {
     //   window.addEventListener('scroll', this.onPageEnd);
     // },
@@ -479,16 +466,32 @@
       },
       onPageEnd: function(){
         let toTop = document.querySelector('.toTop');
-        if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
           toTop.style.display = "block";
         }
         else {
           toTop.style.display = "none";
         }
       },
-      toTop:function() {
+      toTop: function() {
         document.body.scrollTop = 0; //for safari
         document.documentElement.scrollTop = 0; //for chrome
+      },
+      reveal: function() {
+        let reveals = document.querySelector('.reveal');
+
+        for(var i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let revealTop = reveals[i].getBoundingClientRect().top;
+          let revealPoint = 150;
+
+          if(revealTop > windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
       },
     },
   }
