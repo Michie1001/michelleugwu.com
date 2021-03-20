@@ -54,10 +54,10 @@
           fiction, space, animals and art. <br>
         </h1>
       </div>
-      <button v-on:click="revealMain">Explore</button>
+      <button v-on:click="Main">Explore</button>
     </header>
 
-    <div class="main-content" v:on:scroll.native="reveal">
+    <div class="main-content" v:on:scroll.native="">
       <div class="roundbg big"></div>
       <nav class="about">
         <!-- <div class="anatomy">
@@ -101,7 +101,7 @@
 
       <div class="grid-area">
 
-        <div class="experience-section reveal">
+        <div class="experience-section">
           <div class="experience"
           v-for="exp in experience"
           :key="exp.id">
@@ -111,7 +111,7 @@
         </div>
 
         <v-img
-          class="babe reveal"
+          class="babe"
           dark
           contain
           height= "400"
@@ -119,7 +119,7 @@
           :src="require('../assets/imgs/babe.png')"
         ></v-img>
 
-        <div class="education-section reveal">
+        <div class="education-section">
           <div class="education"
           v-for="edu in education"
           :key="edu.id">
@@ -128,16 +128,16 @@
           </div>
         </div>
 
-        <div class="achievements-section reveal">
+        <div class="achievements-section">
           <div class="achievements"
           v-for="ach in achievements"
           :key="ach.id">
-            <span>{{ach}}</span>
+            <p>{{ach}}</p>
           </div>
         </div>
 
         <v-img
-          class="giant reveal"
+          class="giant"
           dark
           contain
           height= "400"
@@ -145,7 +145,7 @@
           :src="require('../assets/imgs/giant.png')"
         ></v-img>
 
-        <div class="skills-section reveal">
+        <div class="skills-section">
           <span>Skills </span>
           <div class="specific__skills">
             <div class="skills"
@@ -163,21 +163,6 @@
               :key="tool.id">
                 <p>{{tool}}</p>
             </div>
-          </div>
-        </div>
-
-        <div class="contacts-section reveal">
-          <h3>Reach me here: </h3>
-          <div class="contacts"
-            v-for="reach in contact"
-            :key="reach.id">
-              <a :href="reach.link">
-                <h5>
-                  <i :class="reach.icon"></i>
-                  <br>
-                  {{reach.name}}
-                </h5>
-            </a>
           </div>
         </div>
 
@@ -212,8 +197,24 @@
       </div>
 
       <div class="reel">
-        <p>Send me an email, let's work together.</p>
-        <p>michieugwu@gmail.com</p>
+
+        <div class="contacts-section">
+          <div class="contacts"
+            v-for="reach in contact"
+            :key="reach.id">
+              <a :href="reach.link">
+                <h5>
+                  <i :class="reach.icon"></i>
+                  <br>
+                  {{reach.name}}
+                </h5>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p>Send me an email, let's work together.</p>
+          <p>michieugwu@gmail.com</p>
+        </div>
       </div>
 
       <button class="toTop" v-on:click="toTop">
@@ -340,9 +341,8 @@
         'Sass',
         'Bootstrap',
         'Vuetify',
-        'TypeScript',
-        'Sketch Art',
-        'Creative writing',
+        // 'TypeScript',
+        'Digital Design',
         'Fluent English',
         'Conversational Japanese',
         'Conversational German',
@@ -460,9 +460,9 @@
     // },
 
     methods: {
-      revealMain: function(){
-        let revealMain = document.querySelector('header');
-        revealMain.classList.add('open');
+      Main: function(){
+        let Main = document.querySelector('header');
+        Main.classList.add('open');
       },
       onPageEnd: function(){
         let toTop = document.querySelector('.toTop');
@@ -477,22 +477,22 @@
         document.body.scrollTop = 0; //for safari
         document.documentElement.scrollTop = 0; //for chrome
       },
-      reveal: function() {
-        let reveals = document.querySelector('.reveal');
+      // reveal: function() {
+      //   let s = document.querySelector('.');
 
-        for(var i = 0; i < reveals.length; i++) {
-          let windowHeight = window.innerHeight;
-          let revealTop = reveals[i].getBoundingClientRect().top;
-          let revealPoint = 150;
+      //   for(var i = 0; i < s.length; i++) {
+      //     let windowHeight = window.innerHeight;
+      //     let Top = s[i].getBoundingClientRect().top;
+      //     let Point = 150;
 
-          if(revealTop > windowHeight - revealPoint) {
-            reveals[i].classList.add('active');
-          }
-          else{
-            reveals[i].classList.remove('active');
-          }
-        }
-      },
+      //     if(Top > windowHeight - Point) {
+      //       s[i].classList.add('active');
+      //     }
+      //     else{
+      //       s[i].classList.remove('active');
+      //     }
+      //   }
+      // },
     },
   }
 </script>

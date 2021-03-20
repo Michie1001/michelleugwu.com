@@ -35,6 +35,24 @@ export default {
       list-style-type: none;
     }
   }
+  h3{
+    margin: 0 3rem 1rem 3rem;
+    font-size: 24px;
+  }
+  span{
+    color: #010c22;
+    font-size: 21px;
+  }
+  p{
+    color: #777;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0c107c;
+  }
   .landing{
     // background-color:#f1f1f1;
     // background: linear-gradient(to top, #010c22 0%, #537895 100%);
@@ -215,24 +233,6 @@ export default {
       justify-content: center;
       position: relative;
       z-index: 2;
-      h3{
-        margin: 0 3rem 1rem 3rem;
-        font-size: 24px;
-      }
-      span{
-        color: #010c22;
-        font-size: 21px;
-      }
-      p{
-        color: #777;
-        margin-bottom: 1rem;
-        font-size: 21px;
-      }
-      a{
-        text-decoration: none;
-        font-weight: bold;
-        color: #0c107c;
-      }
       .experience-section{
         text-align: right;
         grid-column: 1 / 2;
@@ -245,32 +245,34 @@ export default {
       .education-section{
         grid-column: 2 / -1;
         grid-row: 2 / 3;
+        justify-self: center;
       }
       .achievements-section{
-        text-align: center;
+        text-align: right;
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
         .achievements{
-          padding: 0 4rem;
+          padding: 0 1rem;
         }
-        .achievements span{
+        .achievements p{
           margin-bottom: 1rem;
           font-weight: bold;
           font-size: 14px;
+          line-height:1;
           &::before{
             content: '• ';
-            font-size: 21px;
+            font-size: 18px;
             color: #000;
           }
         }
       }
       .giant{
         grid-column: 1/2;
-        grid-row: 4/5;
+        grid-row: 3/4;
       }
       .skills-section{
         grid-column: 2 / -1;
-        grid-row: 4 / 5;
+        grid-row: 3/4;
         font-weight: bold;
         text-align: center;
         .specific__skills, .specific__tools{
@@ -286,47 +288,7 @@ export default {
           }
         }
       }
-      .contacts-section{
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-        justify-content: center;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 200px 200px;
-        h3{
-          grid-column: 1 / -1;
-          text-align: center;
-        }
-        .contacts{
-          font-size: 1.3rem;
-          text-align: center;
-          line-height: 1;
-          margin: 1rem 0;
-          h5{
-            color: #777;
-          }
-          i{
-            color: #010c22;
-            font-size: 2rem;
-          }
-          &:last-child {
-            grid-column: 1/-1;
-          }
-        }
-      }
-      div[class*="section"]{
-        transition: .5s;
-        transform-origin: left;
-        transform: scaleX(1);
-      }
-      div[class*="section"]:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform-origin: right;
-        transition: .5s;
-      }
+      
     }
     .works-section{
       overflow-y: scroll;
@@ -377,13 +339,37 @@ export default {
         }
       }
     }
+
     .reel{
       background-color: #f1f1f1;
       color: #1d273c;
       min-height: 30vh;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
+
+      .contacts-section{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 200px 200px;
+        .contacts{
+          font-size: 1.3rem;
+          text-align: center;
+          line-height: 1;
+          margin: 1rem 0;
+          h5{
+            color: #777;
+          }
+          i{
+            color: #010c22;
+            font-size: 2rem;
+          }
+          &:last-child {
+            grid-column: 1/-1;
+          }
+        }
+      }
     }
     .toTop{
       display: none;
