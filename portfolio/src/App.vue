@@ -37,7 +37,9 @@ export default {
   }
   h3{
     margin: 0 3rem 1rem 3rem;
-    font-size: 24px;
+    font-size: 36px;
+    text-align: inherit;
+    margin: 1rem 0;
   }
   span{
     color: #010c22;
@@ -163,18 +165,6 @@ export default {
       justify-content: center;
       align-items: flex-end;
       position: relative;
-      // .anatomy{
-      //   svg {
-      //     position: absolute;
-      //     top: 0;
-      //     left: 0;
-      //     right: 0;
-      //     bottom: 0;
-      //     display: block;
-      //     width: 100%;
-      //     height: 100%;
-      //   }
-      // }
       h2{
         font-size: 4rem;
         // animation: pulse 2s ease infinite;
@@ -228,7 +218,7 @@ export default {
       padding: 0 4rem;
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-row-gap: 5rem;
+      grid-gap: 5rem;
       align-items: center;
       justify-content: center;
       position: relative;
@@ -237,10 +227,14 @@ export default {
         text-align: right;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        h3{
+          color: #35cbfa;
+        }
       }
       .babe{
         grid-column: 2/-1;
         grid-row: 1/2;
+
       }
       .education-section{
         grid-column: 2 / -1;
