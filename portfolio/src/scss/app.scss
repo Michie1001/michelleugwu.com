@@ -144,7 +144,7 @@ a{
     justify-content: center;
     align-items: flex-end;
     position: relative;
-    h2{
+    h1{
       font-size: 4rem;
       // animation: pulse 2s ease infinite;
     }
@@ -152,19 +152,24 @@ a{
   .roundbg{
     background-color: #f1f1fe;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     top: 40vh;
     left: 0;
     height: 300px;
     width: 300px;
   }
+  .only-dktp{
+  	visibility: hidden;
+  	@include medium-screens{
+  		visibility: visible;
+  	}
+  }
   .big{
     top: -5vh;
     left: 70vw;
     transform: scale(2);
     background-color: #f1e2e1;
-    z-index: 0;
   }
   .small{
     top: 2vh;
@@ -243,26 +248,29 @@ a{
       	}
     }
     .education-section{
-      justify-self: center;
-      h3{
-        color: #35cbfa;
-      }
+		justify-self: center;
+		h3{
+			color: #35cbfa;
+		}
     }
     .skills-section{
-      font-weight: bold;
-      text-align: center;
-      .specific__skills, .specific__tools{
-        text-align: center;
-        margin-left: 2rem;
-        line-height: 1.5;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        align-items: center;
-        justify-content: center;
-        p{
-          font-size: 16px;
-        }
-      }
+		font-weight: bold;
+		text-align: center;
+		span{
+			line-height: 5;
+		}
+		.specific__skills, .specific__tools{
+			text-align: center;
+			margin-left: 2rem;
+			line-height: 1.5;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			align-items: center;
+			justify-content: center;
+			p{
+			 	font-size: 16px;
+			}
+		}
     }
     
   }

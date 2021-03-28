@@ -37,22 +37,22 @@
 
     <header>
       <div class="triangle left">
-        <h1
+        <h2
           :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
           class="main-heading">
           Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
           and I am obsessed with the ocean,<br> 
           fiction, space, animals and art. <br>
-        </h1>
+        </h2>
       </div>
       <div class="triangle right">
-        <h1
+        <h2
           :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
           class="main-heading">
           Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
           and I am obsessed with the ocean,<br> 
           fiction, space, animals and art. <br>
-        </h1>
+        </h2>
       </div>
       <button v-on:click="Main">Explore</button>
     </header>
@@ -60,12 +60,12 @@
     <div class="main-content" v:on:scroll.native="">
       <div class="roundbg big"></div>
       <nav class="about">    
-        <h2>
-          About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
-        </h2>
-      </nav>
-      <div class="roundbg"></div>
+      <div class="roundbg only-dktp"></div>
       <div class="roundbg small"></div>
+        <h1>
+          About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
+        </h1>
+      </nav>
       <div class="yellow-bar">
       </div>
 
@@ -123,8 +123,8 @@
           class="giant"
           dark
           contain
-          height= "400"
-          width= "300"
+          height= "100"
+          width= "100"
           :src="require('../assets/imgs/giant.png')"
         ></v-img>
 
@@ -239,28 +239,34 @@
           date: 'For my NYSC in 2020',
         },
       ],
+      achievements: [
+        'I co-pioneered and co-organized of forLoopUniben in the University of Benin',
+        'I was recognized by Figma as one of the top 5 most consistent Figma users in Nigeria in 2018',
+        'I joined a dance crew fresh out of high school and realized dancing wasn\'t for me',
+        'I interviewed at Microsoft and my major reason for wanting to work there? Encarta!! Lol',
+        'Also, I participated in the University of Benin 2015 Spelling Bee',
+        'I participated in ALCwithGoogle and ALCwithMicrosoft, the first Frontstack Challenge, etc ...I participate a lot',
+        'I was the Public Relations Officer for NACOSS in my 200level. Another social plug being that I was also in the Press Club in my high school',
+        'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
+        'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
+        'I\'m trying to get PADI certified cos I\'m definitely going to swim with whales and Orcas',
+      ],
       education: [
         {
-          institute: 'Carbon Animation, Lagos, Nigeria',
-          degree: 'Animation Basics',
-          date: 'January 2021 - April 2021 ',
+          institute: 'University of Benin, Benin, Nigeria',
+          degree: 'Biochemistry',
+          date: 'Started off thinking I could overcome the metabolic pathways...pfft! I learned how to carry out 5 lab tests in the hospital during my medical internship in my second year at the campus health center',
         },
         {
           institute: 'University of Benin, Benin, Nigeria',
           degree: 'B.Sc, Computer Science',
-          date: 'September 2014 - March 2019 ',
+          date: 'Graduated November 2019',
         },
-      ],
-      achievements: [
-        'Co-pioneer/co-organizer of forLoopUniben in the University of Benin',
-        'Recognized by Figma as one of the top 5 most consistent Figma users in Nigeria in 2018',
-        'Participated in an essay competition on the ‘Formal Education and the Nigerian Youth’ for Sigma Club, Ibadan, Nigeria',
-        'Interviewed at Microsoft',
-        'Participated in the University of Benin 2015 Spelling Bee',
-        'Participated in ALCwithGoogle and ALCwithMicrosoft',
-        'Public Relations Officer for NACOSS in my 200level',
-        'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
-        'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
+        {
+          institute: 'Carbon Animation, Lagos, Nigeria',
+          degree: 'Animation Basics',
+          date: '2021, I\'d have my animation reel up here',
+        },
       ],
       tools: [
         'SEO',
@@ -279,15 +285,15 @@
       ],
       skills: [
         'VueJS',
-        'Laravel',
+        'Digital Design',
         'GraphQL',
         'Linux',
-        'Sass',
+        'Fluent English',
         'Bootstrap',
         'Vuetify',
         // 'TypeScript',
-        'Digital Design',
-        'Fluent English',
+        'Laravel',
+        'Sass',
         'Conversational Japanese',
         'Conversational German',
       ],
