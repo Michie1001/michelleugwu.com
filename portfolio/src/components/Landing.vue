@@ -185,9 +185,9 @@
       <div class="large-illustrated-banner">
         <v-img
             class="banner"
-            dark
+            
             contain
-            :src="require('../assets/imgs/banner.png')"
+            :src="require('../assets/imgs/smilingtr.png')"
           ></v-img>
       </div>
 

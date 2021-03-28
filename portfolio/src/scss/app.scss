@@ -33,10 +33,10 @@ a{
 	color: #0c107c;
 }
 .landing{
-	// background-color:#f1f1f1;
+	background-color:#cdd2e3;
 	// background: linear-gradient(to top, #010c22 0%, #537895 100%);
 	overflow: hidden;
-	background: linear-gradient(to top, #18387c 0%, #e9eff4 100%);
+	// background: linear-gradient(to top, #18387c 0%, #e9eff4 100%);
 	.logo-area{
 		height: 80px;
 		width: 60px;
@@ -144,7 +144,9 @@ a{
 	    align-items: flex-end;
 	    position: relative;
 	    h1{
-	      	font-size: 4rem;
+	      	font-size: 3.1rem;
+	      	color: #624561;
+	      	font-weight: normal;
 	      	// animation: pulse 2s ease infinite;
 	    }
 	}
@@ -366,7 +368,7 @@ a{
 	}
 
   	footer{
-	    background-color: #a0dbed;
+	    // background-color: #a0dbed;
 	    width: 100vw;
 	    // color: #1d273c;
 	    color: #321531;
