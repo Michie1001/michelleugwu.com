@@ -101,14 +101,14 @@
         ></v-img>
 
         <div class="achievements-section">
-          <h3>What I've Spend Time On</h3>
+          <h3>What I've Spent Time On</h3>
           <div class="achievements"
           v-for="ach in achievements"
           :key="ach.id">
             <p>{{ach}}</p>
           </div>
         </div>
-        
+
         <div class="education-section">
           <h3>What I've Studied</h3>
           <div class="education"
