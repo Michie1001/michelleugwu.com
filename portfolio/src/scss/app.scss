@@ -260,13 +260,15 @@ a{
 			line-height: 5;
 		}
 		.specific__skills, .specific__tools{
-			text-align: center;
-			margin-left: 2rem;
 			line-height: 1.5;
 			display: grid;
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			align-items: center;
-			justify-content: center;
+			@include medium-screens{
+				text-align: center;
+				justify-content: center;
+				grid-template-columns: repeat(5, 1fr);
+			}
 			p{
 			 	font-size: 16px;
 			}
