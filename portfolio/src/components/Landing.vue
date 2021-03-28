@@ -194,12 +194,13 @@
       <div class="postscript">
         <h2>By Michelle</h2>
         <p>All illustrations by Michelle</p>
+        <div class="contactMe">
+          <p>Send me an email, let's work together.<br/>
+          <b>michieugwu@gmail.com</b></p>
+        </div>
       </div>
 
-      
-
-      <div class="reel">
-
+      <footer>
         <div class="contacts-section">
           <div class="contacts"
             v-for="reach in contact"
@@ -208,16 +209,25 @@
                 <h5>
                   <i :class="reach.icon"></i>
                   <br>
-                  {{reach.name}}
+                  <!-- {{reach.name}} -->
                 </h5>
             </a>
           </div>
         </div>
-        <div>
-          <p>Send me an email, let's work together.</p>
-          <p>michieugwu@gmail.com</p>
+
+        <div class="footer-logo">
+          <v-img            
+            dark
+            class="imgg"
+            contain
+            width="30px"
+            height="30px"
+            :src="require('../assets/imgs/profileAvatar.svg')"
+          >
+          </v-img>
+          <small>&copy; Copyright 2021, Michelle Ugwu</small> 
         </div>
-      </div>
+      </footer>
 
       <button class="toTop" v-on:click="toTop">
         <i class="fas fa-fighter-jet"></i>
