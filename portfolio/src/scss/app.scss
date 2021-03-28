@@ -187,12 +187,14 @@ a{
   	}
 	.yellow-bar{
 	    background-color: #f1f1f1;
-	    clip-path: ellipse(70% 100% at 50% 100%);
-	    // On mobile: ellipse(100% 100% at 50% 100%)
+	    clip-path: ellipse(100% 100% at 50% 100%);
 	    min-height: 100vh;
 	    width: 100vw;
 	    z-index: 1;
 	    position: absolute;
+	    @include large-screens{
+	    	clip-path: ellipse(70% 100% at 50% 100%);
+	    }
 	}
 	.titlePhoto {
 	    position: relative;
@@ -286,8 +288,8 @@ a{
 			text-align: center;
 			width: 100%;
 			// background-color: #010c22;
-			color: #fff;
-			background: linear-gradient(to top, #271a0b 0%, #f1f1f1 100%);
+			color: #35cbfa;
+			background: linear-gradient(to top, #cdd2e3 0%, #f1f1f1 100%);
 			.overlapImage{
 				transform: translateY(-10vh);
 				z-index: 3;
@@ -303,10 +305,10 @@ a{
 	    .scrollable{
 		    overflow-x: scroll;
 	      	display: flex;
-	      	background-color: #271a0b;
+	      	// background-color: #271a0b;
 	      	scroll-behaviour: smooth;
 	    	.works{
-	      		border: 1px solid;
+	      		// border: 1px solid;
 	      		.preview-image{
 	      			height: 500px;
 	      			width: 355px;
@@ -357,6 +359,9 @@ a{
 		padding: 2rem 0;
 		text-align: center;
 		font-size: 2rem;
+		h2{
+			font-weight: normal;
+		}
 		p{
 			color: #bbb;
 		}
