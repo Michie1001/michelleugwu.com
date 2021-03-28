@@ -153,6 +153,12 @@
 
       <div class="works-section">
         <div class="fixed-banner">
+          <v-img
+            class="overlapImage"
+            dark
+            contain
+            :src="require('../assets/imgs/book.png')"
+          ></v-img>
           <h2>Works</h2>
         </div>
         <div class="scrollable">
@@ -161,15 +167,16 @@
             <v-img
               class="preview-image"
               dark
-              contain
-              height="600px"
+              cover
               :src="work.preview"
             >
-              <h3>{{work.name}}</h3>
-              <p>{{work.description}}</p>
-              <button>
-                <a :href="work.link">Go to Project</a>
-              </button>
+              <div class="text-area">
+                <h3>{{work.name}}</h3>
+                <p>{{work.description}}</p>
+                <button>
+                  <a :href="work.link">Go to Project</a>
+                </button>
+              </div>
             </v-img>
           </div>
         </div>
