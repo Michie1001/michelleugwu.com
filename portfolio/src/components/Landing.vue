@@ -183,8 +183,20 @@
       </div>
 
       <div class="large-illustrated-banner">
-        <v-img></v-img>
+        <v-img
+            class="banner"
+            dark
+            contain
+            :src="require('../assets/imgs/banner.png')"
+          ></v-img>
       </div>
+
+      <div class="postscript">
+        <h2>By Michelle</h2>
+        <p>All illustrations by Michelle</p>
+      </div>
+
+      
 
       <div class="reel">
 
