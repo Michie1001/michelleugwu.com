@@ -60,9 +60,9 @@
     <div class="main-content" v:on:scroll.native="">
       <div class="roundbg big"></div>
       <nav class="about">    
-      <div class="roundbg only-dktp"></div>
-      <div class="roundbg small"></div>
-        <h1>
+        <div class="roundbg only-dktp"></div>
+        <div class="roundbg small"></div>
+        <h1 id="arc">
           About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h1>
       </nav>
@@ -205,6 +205,22 @@
         </div>
       </div>
 
+      <div class="wave-effect">
+        <!-- Gotten the waves code from Daniel Österman on codepen, great stuff -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#e0e0e0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.8)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="#f1e2e1" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#cdd2e3" />
+        </g>
+        </svg>
+      </div>
+
       <footer>
         <div class="contacts-section">
           <div class="contacts"
@@ -289,7 +305,7 @@
         {
           institute: 'University of Benin, Benin, Nigeria',
           degree: 'Biochemistry',
-          date: 'Started off thinking I could overcome the metabolic pathways...pfft! I learned how to carry out 5 lab tests in the hospital during my medical internship in my second year at the campus health center',
+          date: 'Started off thinking I could overcome the metabolic pathways...pfft! What I did was learn how to carry out 5 lab tests in the hospital during my medical internship at the campus health center, in my second year',
         },
         {
           institute: 'University of Benin, Benin, Nigeria',
@@ -303,7 +319,7 @@
         },
       ],
       tools: [
-        'SEO',
+        'Google Analytics',
         'Figma',
         'Postman',
         'Adobe AfterEffects',
@@ -325,11 +341,11 @@
         'Fluent English',
         'Bootstrap',
         'Vuetify',
-        // 'TypeScript',
         'Laravel',
         'Sass',
         'Conversational Japanese',
         'Conversational German',
+        'SEO',
       ],
       contact: [
         {
@@ -457,6 +473,13 @@
         document.body.scrollTop = 0; //for safari
         document.documentElement.scrollTop = 0; //for chrome
       },
+      // arc: function() {
+      //   var arc = new CircleType(document.getElementById('arc'));
+      //   window.addEventListener('resize', function updateRadius() {
+      //     arc.radius(arc.element.offsetWidth / 2);
+      //   });
+      //   updateRadius();
+      // },
     },
   }
 </script>
