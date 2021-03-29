@@ -235,7 +235,7 @@
       </footer>
 
       <button class="toTop" v-on:click="toTop">
-        <i class="fas fa-fighter-jet"></i>
+        <i class="fas fa-fighter-jet rot"></i>
       </button>
 
     </div>
@@ -444,10 +444,6 @@
     // },
 
     methods: {
-      Main: function(){
-        let Main = document.querySelector('header');
-        Main.classList.add('open');
-      },
       onPageEnd: function(){
         let toTop = document.querySelector('.toTop');
         if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -461,22 +457,6 @@
         document.body.scrollTop = 0; //for safari
         document.documentElement.scrollTop = 0; //for chrome
       },
-      // reveal: function() {
-      //   let s = document.querySelector('.');
-
-      //   for(var i = 0; i < s.length; i++) {
-      //     let windowHeight = window.innerHeight;
-      //     let Top = s[i].getBoundingClientRect().top;
-      //     let Point = 150;
-
-      //     if(Top > windowHeight - Point) {
-      //       s[i].classList.add('active');
-      //     }
-      //     else{
-      //       s[i].classList.remove('active');
-      //     }
-      //   }
-      // },
     },
   }
 </script>
