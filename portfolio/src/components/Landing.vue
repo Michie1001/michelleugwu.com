@@ -35,7 +35,7 @@
     <!-- Fix up the scrollable one for mobile only. -->
 
 
-    <header>
+<!--     <header>
       <div class="triangle left">
         <h2
           :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
@@ -55,7 +55,7 @@
         </h2>
       </div>
       <button v-on:click="Main">Explore</button>
-    </header>
+    </header> -->
 
     <div class="main-content" v:on:scroll.native="">
       <div class="roundbg big"></div>
@@ -78,6 +78,11 @@
             :src="require('../assets/imgs/kitty-sticker.png')"
           ></v-img>
       </div>
+
+      <h2 class="main-heading">
+        <span class="messages"></span>, <br>
+        Obsessed with the ocean,fiction, space, animals and art
+      </h2>
 
       <div class="grid-area">
 
