@@ -10,7 +10,7 @@
           About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h1>
       </nav>
-      <div class="yellow-bar">
+      <div class="curved-bar">
       </div>
 
       <div class="titlePhoto">
@@ -28,7 +28,7 @@
       <h2 class="main-heading">
         <!-- <p>{{messageToShow}}</p> -->
         <span class="messages"></span>, <br>
-        Obsessed with the ocean,fiction, space, animals and art
+        Obsessed with the ocean, fiction, space, animals and art
       </h2>
 
       <div class="grid-area">
@@ -359,16 +359,16 @@
           preview: '',
           alt: 'Hotels.ng image',
           name: 'Hotels.ng',
-          description: 'I worked on numerous pages during my time there, this is a montage of some of the best I did',
+          description: 'I worked on numerous pages during my time there',
           link:'hotels.ng',
         },
         {
           id:'5',
           preview: '',
-          alt: 'Mist image',
-          name: 'Mist\'s playground',
-          description: 'My playground and old portfolio site showing how I\'ve progressed so far',
-          link:'',
+          alt: 'Hotels.ng Places',
+          name: 'Places | Hotels.ng',
+          description: 'Places of attraction, Hotels.ng',
+          link:'hotels.ng/places',
         },
         {
           id:'6',
