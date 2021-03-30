@@ -25,11 +25,33 @@
           ></v-img>
       </div>
 
-      <h2 class="main-heading">
-        <!-- <p>{{messageToShow}}</p> -->
-        <span class="messages"></span>, <br>
-        Obsessed with the ocean, fiction, space, animals and art
-      </h2>
+      <!-- <div v-for="(message, i) in messages" :key="i">
+        <vue-typed-js
+          
+          :stringsElement="'message'"
+          >
+          <h2 class="main-heading">
+            <span class="typing messages"></span>, <br>
+            Obsessed with the ocean, fiction, space, animals and art
+          </h2>
+        </vue-typed-js>
+      </div> -->
+
+      <vue-typed-js
+        :strings="['artist', 'writer', 'creative', 'designer', 'animator', 'frontend engineer']"
+        :typeSpeed="80"
+        :backSpeed="50"
+        :backDelay="300"
+        :loop="true"
+        
+
+        >
+        <h2 class="main-heading">
+          <!-- <p>{{messageToShow}}</p> -->
+          <span class="typing messages"></span><br>
+          Obsessed with the ocean, fiction, space, animals and art
+        </h2>
+      </vue-typed-js>
 
       <div class="grid-area">
 
