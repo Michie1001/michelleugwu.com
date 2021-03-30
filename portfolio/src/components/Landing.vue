@@ -16,10 +16,12 @@
       <div class="titlePhoto">
           <v-img
             dark
+            alt="Illustrated resting cat"
+            lazysrc=""
             contain
             height= "200"
             width= "300"
-            :src="require('../assets/imgs/kitty-sticker.png')"
+            :src="require('../assets/imgs/kitty.png')"
           ></v-img>
       </div>
 
@@ -43,6 +45,7 @@
 
         <v-img
           class="babe"
+          alt="Illustrated face of a girl with a tree behind her"
           dark
           contain
           height= "500"
@@ -70,7 +73,8 @@
         </div>
 
         <v-img
-          class="giant"
+          class="collage"
+          alt="Collage showcasing my recent certifications and assessment proficiencies"
           dark
           contain
           height= "100"
@@ -105,6 +109,7 @@
         <div class="fixed-banner">
           <v-img
             class="overlapImage"
+            alt="Illustrated waves on an open book"
             dark
             contain
             :src="require('../assets/imgs/book.png')"
@@ -112,22 +117,23 @@
           <h2>Works</h2>
         </div>
         <div class="scrollable">
-          <div class="works" v-for="(work, i) in works"
-            :key="i">
-            <v-img
-              class="preview-image"
-              dark
-              cover
-              :src="work.preview"
-            >
-              <div class="text-area">
-                <h3>{{work.name}}</h3>
-                <p>{{work.description}}</p>
-                <button>
-                  <a :href="work.link">Go to Project</a>
-                </button>
+          <div class="works" v-for="(work, index) in works"
+            :key="index">
+            <div v-if ="workId == work.id">
+              <div class="preview-image">
+                <div v-for="(preview, imageIndex) in work" :key="imageIndex">
+                  <img alt="work.alt" :src="preview"
+                    />
+                </div>
+                <div class="text-area">
+                  <h3>{{work.name}}</h3>
+                  <p>{{work.description}}</p>
+                  <button>
+                    <a :href="work.link">Go to Project</a>
+                  </button>
+                </div>
               </div>
-            </v-img>
+            </div>
           </div>
         </div>
       </div>
@@ -135,9 +141,9 @@
       <div class="large-illustrated-banner">
         <v-img
             class="banner"
-            
+            alt="illustrated smiling girl with large hoop earrings containing the words - Stay Free"
             contain
-            :src="require('../assets/imgs/smilingtr.png')"
+            :src="require('../assets/imgs/banner.png')"
           ></v-img>
       </div>
 
@@ -185,6 +191,7 @@
           <v-img            
             dark
             class="imgg"
+            alt="Michelle's logo"
             contain
             width="30px"
             height="30px"
@@ -237,7 +244,7 @@
         },
       ],
       achievements: [
-        'I co-pioneered and co-organized of forLoopUniben in the University of Benin',
+        'I co-pioneered and co-organized forLoopUniben in the University of Benin',
         'I was recognized by Figma as one of the top 5 most consistent Figma users in Nigeria in 2018',
         'I joined a dance crew fresh out of high school and realized dancing wasn\'t for me',
         'I interviewed at Microsoft and my major reason for wanting to work there? Encarta!! Lol',
@@ -247,6 +254,7 @@
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
         'I\'m trying to get PADI certified cos I\'m definitely going to swim with whales and Orcas',
+        'Advocating for VueJS'
       ],
       education: [
         {
@@ -323,61 +331,81 @@
       ],
       works:[
         {
-          preview: 'require(\'../assets/imgs/whistling-pine.png\')',
+          id:'1',
+          preview: 'require(\'../assets/imgs/whistling-pine.jpg\')',
+          alt: 'Whistling Pine image',
           name: 'Whistling Pine - Nexter',
           description: 'A play on CSS grids for a make believe real estate management company',
           link:'https://whistlingpine-nexter.netlify.app/',
         },
         {
+          id:'2',
           preview: '',
+          alt: 'Road Runner image',
           name: 'Road Runner',
           description: 'Personal project featuring my flexbox playground in a make-believe travel company\'s website',
           link:'https://theroadrunner.netlify.app/',
         },
         {
+          id:'3',
           preview: '',
+          alt: 'Shalom image',
           name: 'Shalom',
           description: 'Personal project for an airbnb-ish website',
           link:'https://shalom-by-mist.netlify.app/',
         },
         {
+          id:'4',
           preview: '',
+          alt: 'Hotels.ng image',
           name: 'Hotels.ng',
           description: 'I worked on numerous pages during my time there, this is a montage of some of the best I did',
           link:'hotels.ng',
         },
         {
+          id:'5',
           preview: '',
+          alt: 'Mist image',
           name: 'Mist\'s playground',
           description: 'My playground and old portfolio site showing how I\'ve progressed so far',
           link:'',
         },
         {
+          id:'6',
           preview: '',
+          alt: 'Nepa image',
           name: 'nepa.ng',
           description: 'A product I was part of the team for in Hotels.ng',
           link:'',
         },
         {
+          id:'7',
           preview: '',
+          alt: 'Pangaea image',
           name: 'Pangaea',
           description: 'I created this for an assessment test',
           link:'',
         },
         {
+          id:'8',
           preview: '',
+          alt: 'Telex image',
           name: 'Telex',
           description: 'A project I was a part of the team for at Hotels.ng',
           link:'',
         },
         {
+          id:'9',
           preview: '',
+          alt: 'Movie poster image',
           name: 'Movie poster',
           description: 'A work done with Adobe Stock',
           link:'',
         },
         {
+          id:'10',
           preview: '',
+          alt: 'Embo image',
           name: 'Embo',
           description: 'A gaming enterprise',
           link:'',
