@@ -1,61 +1,5 @@
 <template v-on:scroll.native="onPageEnd">
   <div class="landing">
-    <!-- <v-img
-      dark
-      max-height="650px"
-      :src="require('../assets/starry.jpg')"
-    > -->
-      <!-- <div class="logo-area">
-        <v-img
-          class="shrink mr-2"
-          contain
-          transition="scale-transition"
-          :src="require('../assets/logo.svg')"
-        ></v-img>
-      </div> there's no need for a logo at the moment--> 
-<!--       <v-layout fill-height align-center>
-        <v-container>
-          <v-row align="center" justify="center" class="white--text text-center">
-            <v-col cols="12">
-              <h1
-                :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
-                class="main-heading"
-              >Hi, I'm Michelle <br>and I 
-              <span class="messages"></span>
-              </h1> -->
-              <!-- <div
-                :class="{'headline': $vuetify.breakpoint.smAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
-              >I make applications.</div> -->
-           <!--  </v-col>
-          </v-row>
-        </v-container>
-      </v-layout>
-    </v-img> -->
-
-    <!-- Fix up the scrollable one for mobile only. -->
-
-
-<!--     <header>
-      <div class="triangle left">
-        <h2
-          :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
-          class="main-heading">
-          Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
-          and I am obsessed with the ocean,<br> 
-          fiction, space, animals and art. <br>
-        </h2>
-      </div>
-      <div class="triangle right">
-        <h2
-          :class="{'display-2': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
-          class="main-heading">
-          Hi, I'm Michelle, <br> <span class="messages"></span>, <br>
-          and I am obsessed with the ocean,<br> 
-          fiction, space, animals and art. <br>
-        </h2>
-      </div>
-      <button v-on:click="Main">Explore</button>
-    </header> -->
 
     <div class="main-content" v:on:scroll.native="">
       <div class="roundbg big"></div>
@@ -80,6 +24,7 @@
       </div>
 
       <h2 class="main-heading">
+        <!-- <p>{{messageToShow}}</p> -->
         <span class="messages"></span>, <br>
         Obsessed with the ocean,fiction, space, animals and art
       </h2>
@@ -262,6 +207,8 @@
 </template>
 
 <script>
+  import * as ext from '../assets/extras.js'
+
   export default {
     name: 'Landing',
 
@@ -437,7 +384,7 @@
         },
         
       ],
-      messageToShow: '',
+      messageToShow: `Hello ${ext.message}`,
       messages: [
         'make things beautiful',
         'write code',
