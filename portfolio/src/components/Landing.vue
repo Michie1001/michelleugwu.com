@@ -6,7 +6,7 @@
       <nav class="about">    
         <div class="roundbg only-dktp"></div>
         <div class="roundbg small"></div>
-        <h1 id="arc">
+        <h1>
           About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h1>
       </nav>
@@ -43,7 +43,7 @@
         :backSpeed="50"
         :backDelay="300"
         :loop="true"
-        
+
 
         >
         <h2 class="main-heading">
@@ -276,6 +276,7 @@
         'For my final year seminar, I gave a talk on the Importance and Benefits of Gamification',
         'For my final year project, I implemented a design of a Virtual Tour of the University Campus using React360',
         'I\'m trying to get PADI certified cos I\'m definitely going to swim with whales and Orcas',
+        'Conversational Japanese and German',
         'Advocating for VueJS'
       ],
       education: [
@@ -320,8 +321,6 @@
         'Vuetify',
         'Laravel',
         'Sass',
-        'Conversational Japanese',
-        'Conversational German',
         'SEO',
       ],
       contact: [
