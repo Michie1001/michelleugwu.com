@@ -434,6 +434,7 @@
         
       ],
       messageToShow: `Hello ${ext.message}`,
+      // onPageEnd: `${ext}`,
       messages: [
         'make things beautiful',
         'write code',
@@ -456,19 +457,19 @@
     // },
 
     methods: {
-      onPageEnd: function(){
-        let toTop = document.querySelector('.toTop');
-        if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-          toTop.style.display = "block";
-        }
-        else {
-          toTop.style.display = "none";
-        }
-      },
-      toTop: function() {
-        document.body.scrollTop = 0; //for safari
-        document.documentElement.scrollTop = 0; //for chrome
-      },
+      // onPageEnd: function(){
+      //   let toTop = document.querySelector('.toTop');
+      //   if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      //     toTop.style.display = "block";
+      //   }
+      //   else {
+      //     toTop.style.display = "none";
+      //   }
+      // },
+      // toTop: function() {
+      //   document.body.scrollTop = 0; //for safari
+      //   document.documentElement.scrollTop = 0; //for chrome
+      // },
       // arc: function() {
       //   var arc = new CircleType(document.getElementById('arc'));
       //   window.addEventListener('resize', function updateRadius() {
