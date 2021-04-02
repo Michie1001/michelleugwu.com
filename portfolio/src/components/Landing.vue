@@ -74,7 +74,7 @@
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
-            v-on:click="toTop"
+            v-on:click="smooth"
             class="toTop"
             elevation="2"
             fab
@@ -158,6 +158,11 @@
         document.body.scrollTop = 0; //for safari
         document.documentElement.scrollTop = 0; //for chrome
       },
+      smooth: function(){
+        document.querySelector('.about').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      }
     },
   }
 </script>
