@@ -70,18 +70,25 @@
 
       <Footer />
 
-      <v-btn
-        v-on:click="toTop"
-        class="toTop"
-        elevation="2"
-        fab
-        icon
-        raised
-      >
-        <i class="fas fa-fighter-jet"></i>
-      </v-btn>
-      <button  v-on:click="toTop">
-      </button>
+      
+      <v-tooltip left>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            v-on:click="toTop"
+            class="toTop"
+            elevation="2"
+            fab
+            icon
+            raised
+            dark
+            v-bind="attrs"
+            v-on="on"
+            >
+            <i class="fas fa-fighter-jet"></i>
+          </v-btn>
+        </template>
+        <span>Launch to top</span>
+      </v-tooltip>
 
     </div>
 
@@ -130,34 +137,27 @@
     //fix my scroll problem just fine either way
     //I chose less 
 
-    // created() {
-    //   window.addEventListener('scroll', this.onPageEnd);
-    // },
-    // destroyed() {
-    //   window.addEventListener('scroll', this.onPageEnd);
-    // },
+    created() {
+      window.addEventListener('scroll', this.onPageEnd);
+    },
+    destroyed() {
+      window.addEventListener('scroll', this.onPageEnd);
+    },
 
     methods: {
-      // onPageEnd: function(){
-      //   let toTop = document.querySelector('.toTop');
-      //   if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-      //     toTop.style.display = "block";
-      //   }
-      //   else {
-      //     toTop.style.display = "none";
-      //   }
-      // },
-      // toTop: function() {
-      //   document.body.scrollTop = 0; //for safari
-      //   document.documentElement.scrollTop = 0; //for chrome
-      // },
-      // arc: function() {
-      //   var arc = new CircleType(document.getElementById('arc'));
-      //   window.addEventListener('resize', function updateRadius() {
-      //     arc.radius(arc.element.offsetWidth / 2);
-      //   });
-      //   updateRadius();
-      // },
+      onPageEnd: function(){
+        let toTop = document.querySelector('.toTop');
+        if( document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+          toTop.style.display = "block";
+        }
+        else {
+          toTop.style.display = "none";
+        }
+      },
+      toTop: function() {
+        document.body.scrollTop = 0; //for safari
+        document.documentElement.scrollTop = 0; //for chrome
+      },
     },
   }
 </script>

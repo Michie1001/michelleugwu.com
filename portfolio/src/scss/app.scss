@@ -2,6 +2,7 @@
 
 *{
 	box-sizing: border-box;
+	transition: ease 2s;
 }
 
 h3{
@@ -394,7 +395,7 @@ p{
 	    }
     }
   	.toTop{
-	    // display: none;
+	    display: none;
 	    position: fixed;
 	    bottom: 20px;
 	    right: 30px;
@@ -405,7 +406,7 @@ p{
 	    	color: #f76599;
 	    }
 	    &:hover{
-	      	transform: translateY(5px) rotate(-120deg);
+	      	transform: translateY(5px) rotate(-100deg);
 	      	i{
 	      		color: #00aeff;
 	      	}

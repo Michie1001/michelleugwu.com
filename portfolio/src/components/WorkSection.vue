@@ -11,32 +11,6 @@
       ></v-img>
       <h2>Works</h2>
     </div>
-    
-    <!-- <div
-      v-for="item in items"
-      :key="item.id"
-      class="d-flex child-flex"
-      cols="4"
-      >
-      <v-img
-        :src="item.src"
-        aspect-ratio="1"
-        class="grey lighten-2"
-      >
-        <template v-slot:placeholder>
-          <v-row
-            class="fill-height ma-0"
-            align="center"
-            justify="center"
-          >
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
-    </div> -->
 
     <div class="scrollable">
       <div class="works" v-for="work in works"
@@ -46,6 +20,7 @@
           :src="work.src"
           alt="work.alt"
           contain
+          eager
           >
           <div class="overlay">
             <div class="text-area">
