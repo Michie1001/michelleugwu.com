@@ -192,7 +192,7 @@ p{
 	    .fixed-banner{
 			text-align: center;
 			width: 100%;
-			color: #35cbfa;
+			color: #010c22;
 			background: linear-gradient(to top, #cdd2e3 0%, #f1f1f1 100%);
 			.overlapImage{
 				transform: translateY(-10vh);
@@ -211,6 +211,8 @@ p{
 	      	display: flex;
 	    	.works{
 	      		.preview-image{
+	      			height: 500px;
+	      			width: 300px;
 	      			display: flex;
 	      			margin: .5rem .3rem;
 	      			transition: all 1s ease;
@@ -243,6 +245,12 @@ p{
 	      				.overlay{
 	      					opacity: 0;
 	      				}
+	      			}
+	      			@include medium-screens {
+	      				height: 450px;
+	      				width: 500px;
+	      				max-width: 600px;
+	      				min-width: 300px;
 	      			}
 	      		}
 	    	}
@@ -374,7 +382,6 @@ p{
 	    	color: #010c22;
 	    	.imgg{
 	    		margin: 0 auto;
-	    		fill: #c8e867;
 	    	}
 	    }
 	    @include medium-screens{

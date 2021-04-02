@@ -45,10 +45,7 @@
           class="preview-image"
           :src="work.src"
           alt="work.alt"
-          position="top left"
-          height="450px"
-          max-width="600px"
-          min-width="300px"
+          contain
           >
           <div class="overlay">
             <div class="text-area">
@@ -74,79 +71,79 @@
         {
           id: 1,
           src: require("../assets/imgs/hotelsng.jpg"),
-          alt: 'Hotelsng preview',
+          alt: 'Hotelsng preview image',
           name: 'Hotelsng - Places',
-          link:'https://hotelsng/'
+          link:'hotels.ng/places'
         },
         {
           id: 2,
           src: require("../assets/imgs/roadrunner.jpg"),
-          alt: 'Road Runner preview',
+          alt: 'Road Runner preview image',
           name: 'Road Runner',
-          link:''
+          link:'https://theroadrunner.netlify.app/'
         },
         {
           id: 3,
           src: require("../assets/imgs/telex.jpg"),
-          alt: 'Telex preview',
+          alt: 'Telex preview image',
           name: 'Telex',
-          link:''
+          link:'telex.im'
         },
         {
           id: 4,
           src: require("../assets/imgs/pangaea.jpg"),
-          alt: 'Pangaea preview',
+          alt: 'Pangaea preview image',
           name: 'Pangaea',
           link:''
         },
         {
           id: 5,
           src: require("../assets/imgs/apartments.jpg"),
-          alt: 'Apartments preview',
+          alt: 'Apartments preview image',
           name: 'Apartments',
-          link:''
+          link:'hotels.ng/apartments'
         },
         {
           id: 6,
           src: require("../assets/imgs/embo.jpg"),
-          alt: 'Embo preview',
+          alt: 'Embo preview image',
           name: 'Embo',
           link:''
         },
         {
           id: 7,
           src: require("../assets/imgs/hotels.jpg"),
-          alt: 'Hotels preview',
+          alt: 'Hotels preview image',
           name: 'Hotels',
-          link:''
+          link:'hotels.ng/'
         },
         {
           id: 8,
           src: require("../assets/imgs/nepa.jpg"),
-          alt: 'Nepa preview',
+          alt: 'Nepa preview image',
           name: 'Nepa',
-          link:''
+          link:'nepa.ng'
         },
         {
           id: 9,
           src: require("../assets/imgs/shalom.jpg"),
-          alt: 'Shalom preview',
+          alt: 'Shalom preview image',
           name: 'Shalom',
-          link:''
+          link:'https://shalom-by-mist.netlify.app/'
         },
         {
           id: 10,
           src: require("../assets/imgs/stock-poster.jpg"),
-          alt: 'stock poster preview',
+          alt: 'stock poster preview image',
           name: 'Non-existent Movie',
           link:''
         },
         {
           id: 11,
           src: require("../assets/imgs/whistling-pine.jpg"),
-          alt: 'Whistling Pine preview',
+          alt: 'Whistling Pine preview image',
           name: 'Whistling Pine',
-          link:''
+          link:'https://whistlingpine-nexter.netlify.app/'
         }
       ],
       // works:[
