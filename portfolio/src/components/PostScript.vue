@@ -11,6 +11,8 @@
 
 <script>
   export default {
+    name: "Postscript",
+
     data: () => ({
       email: "michieugwu@gmail.com",
     }),

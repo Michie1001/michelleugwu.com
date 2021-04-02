@@ -76,6 +76,8 @@
 
 <script>
   export default{
+    name: "Grid area",
+
     props: {messageToShow: String},
     data: () => ({
       experience: [
