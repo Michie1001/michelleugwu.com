@@ -13,10 +13,10 @@ h3{
 	}
 }
 span{
-	color: #010c22;	font-size: 21px;
+	color: #000;	font-size: 21px;
 }
 p{
-	color: #777; margin-bottom: 1rem;
+	color: #333; margin-bottom: 1rem;
 	font-size: 16px;
 }
 .landing{
@@ -261,6 +261,7 @@ p{
 			font-weight: normal;
 		}
 		p{
+			font-size: .8rem;
 			color: #32a636;
 		}
 		.contactMe p{
@@ -354,7 +355,7 @@ p{
 	    .footer-logo{
 	    	margin-left: auto;
 	    	text-align: center;
-	    	color: #999;
+	    	color: #010c22;
 	    	.imgg{
 	    		margin: 0 auto;
 	    		fill: #c8e867;
