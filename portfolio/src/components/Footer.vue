@@ -20,7 +20,7 @@
         <div class="contacts"
           v-for="reach in contact"
           :key="reach.id">
-            <a :href="reach.link">
+            <a :href="reach.link" target="_blank">
               <h5>
                 <i :class="reach.icon"></i>
                 <br>
