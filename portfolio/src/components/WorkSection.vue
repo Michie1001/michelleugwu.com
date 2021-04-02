@@ -50,12 +50,14 @@
           max-width="600px"
           min-width="300px"
           >
-          <div class="text-area">
-            <h3>{{work.name}}</h3>
-            <p>{{work.description}}</p>
-            <button>
-              <a :href="work.link">Go to Project</a>
-            </button>
+          <div class="overlay">
+            <div class="text-area">
+              <h3>{{work.name}}</h3>
+              <!-- <p>{{work.description}}</p> -->
+              <!-- <button>
+                <a :href="work.link">Go to Project</a>
+              </button> -->
+            </div>
           </div>
         </v-img>
       </div>
