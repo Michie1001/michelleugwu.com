@@ -54,7 +54,7 @@
         {
           icon: 'fab fa-linkedin-in',
           name: 'LinkedIn',
-          link: 'www.linkedin.com/in/michelle-ugwu',
+          link: 'https://www.linkedin.com/in/michelle-ugwu',
         },
         {
           icon: 'fab fa-instagram',
