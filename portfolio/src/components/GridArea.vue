@@ -45,9 +45,9 @@
       alt="Collage showcasing my recent certifications and assessment proficiencies"
       dark
       contain
-      height= "100"
-      width= "100"
-      :src="require('../assets/imgs/giant.png')"
+      height= "600"
+      width= "600"
+      :src="require('../assets/imgs/assessments-collage.png')"
     ></v-img>
 
     <div class="skills-section">

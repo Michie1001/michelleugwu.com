@@ -69,7 +69,7 @@
         {
           icon: 'fab fa-stack-overflow',
           name: 'Stack Overflow',
-          link: 'https://stackoverflow.com/users/story/6276301',
+          link: 'https://stackoverflow.com/story/mist',
         },
         {
           icon: 'fab fa-twitter',
