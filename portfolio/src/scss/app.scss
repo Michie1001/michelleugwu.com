@@ -207,6 +207,7 @@ p{
       		}
 	    }
 	    .scrollable{
+	    	overflow: hidden;
 		    overflow-x: scroll;
 	      	display: flex;
 	    	.works{
@@ -214,7 +215,7 @@ p{
 	      			height: 500px;
 	      			width: 300px;
 	      			display: flex;
-	      			margin: .5rem .3rem;
+	      			margin: .5rem .3rem 0rem;
 	      			transition: all 1s ease;
 
 	      			.overlay{

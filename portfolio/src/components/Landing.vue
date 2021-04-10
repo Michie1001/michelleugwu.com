@@ -7,7 +7,7 @@
         <div class="roundbg only-dktp"></div>
         <div class="roundbg small"></div>
         <h1>
-          About Michelle <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
+          Michelle Ugwu <!-- (watch thi https://youtu.be/RIPdc88dZRI?list=WL to arrange my resume) -->
         </h1>
       </nav>
       <div class="curved-bar">
