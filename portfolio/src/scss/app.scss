@@ -123,6 +123,10 @@ p{
 		    display: grid;
 		    grid-template-columns: 50% 50%;
 		    grid-gap: 3rem;
+		    :is(.babe, .collage){
+		    	height: 500px;
+		    	margin-bottom: 0;
+		    }
 	    }
 	    .experience-section{
 	      	h3{
@@ -137,6 +141,7 @@ p{
 	    }
 	    .babe{
 	    	animation: tilt 2s ease infinite;
+	    	margin-bottom: 3rem;
 	    }
 	    .achievements-section{
 	      	h3{
@@ -275,6 +280,9 @@ p{
 	}
 	.banner{
 		z-index: 3;
+		@include large-screens{
+			height: 350px;
+		}
 	}
 	.postscript{
 		background-color: #f1f1f1;

@@ -62,7 +62,6 @@
             class="banner"
             alt="illustrated smiling girl with large hoop earrings containing the words - Stay Free"
             contain
-            height="350px"
             :src="require('../assets/imgs/banner.png')"
           ></v-img>
       </div>

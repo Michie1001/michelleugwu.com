@@ -16,8 +16,6 @@
       alt="Illustrated face of a girl with a tree behind her"
       dark
       contain
-      height= "500"
-      width= "500"
       :src="require('../assets/imgs/babe.png')"
     ></v-img>
 
@@ -27,8 +25,6 @@
       alt="Collage showcasing my recent certifications and assessment proficiencies"
       dark
       contain
-      height= "600"
-      width= "600"
       :src="require('../assets/imgs/assessments-collage.png')"
     ></v-img>
 
