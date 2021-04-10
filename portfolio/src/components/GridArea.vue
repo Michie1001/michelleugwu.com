@@ -21,24 +21,6 @@
       :src="require('../assets/imgs/babe.png')"
     ></v-img>
 
-    <div class="achievements-section">
-      <h3>What I've Spent Time On</h3>
-      <div class="achievements"
-      v-for="ach in achievements"
-      :key="ach.id">
-        <p>{{ach}}</p>
-      </div>
-    </div>
-
-    <div class="education-section">
-      <h3>What I've Studied</h3>
-      <div class="education"
-      v-for="edu in education"
-      :key="edu.id">
-        <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
-        <p>{{edu.date}}</p>
-      </div>
-    </div>
 
     <v-img
       class="collage"
@@ -70,6 +52,27 @@
         </div>
       </div>
     </div>
+    
+    <div class="achievements-section">
+      <h3>What I've Spent Time On</h3>
+      <div class="achievements"
+      v-for="ach in achievements"
+      :key="ach.id">
+        <p>{{ach}}</p>
+      </div>
+    </div>
+
+    <div class="education-section">
+      <h3>What I've Studied</h3>
+      <div class="education"
+      v-for="edu in education"
+      :key="edu.id">
+        <h4><span>{{edu.degree}}</span> at {{edu.institute}}</h4>
+        <p>{{edu.date}}</p>
+      </div>
+    </div>
+
+    
 
   </div>
 </template>
