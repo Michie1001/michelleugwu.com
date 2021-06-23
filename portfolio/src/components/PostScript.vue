@@ -1,6 +1,6 @@
 <template>
   <div class="postscript">
-    <p>All illustrations by Michelle Ugwu</p>
+    <p>Made with love by Michelle Ugwu</p>
     <div class="contactMe">
       <p>Send me an email, let's work together.<br/>
       <b>{{email}}</b></p>

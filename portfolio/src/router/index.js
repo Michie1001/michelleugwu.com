@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Animations from '../components/Animations.vue'
+import Artworks from '../components/Artwork.vue'
+import Frontend from '../components/Frontend.vue'
+import Illustrations from '../components/Illustrations.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +13,26 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/animations',
+    name: 'Animations',
+    component: Animations
+  },
+  {
+    path: '/artworks',
+    name: 'Artworks',
+    component: Artworks
+  },
+  {
+    path: '/frontend',
+    name: 'Frontend',
+    component: Frontend
+  },
+  {
+    path: '/illustrations',
+    name: 'Illustrations',
+    component: Illustrations
   },
   {
     path: '/about',
