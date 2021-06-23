@@ -1,6 +1,6 @@
 <template>
   <div>
-     
+     <!-- I'll fix later -->
     <div class="art">
       <div v-for="anim in animation"
         class="image"
