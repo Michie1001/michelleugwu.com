@@ -44,7 +44,7 @@
 
 <script>
   export default{
-    name: "Work Section",
+    name: "Work",
 
     data: () => ({
       }),
