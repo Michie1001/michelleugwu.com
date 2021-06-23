@@ -73,9 +73,7 @@
           <span>Launch to top</span>
         </v-tooltip>
 
-      </div>
-
-      
+      </div>      
        
     </div>
     
