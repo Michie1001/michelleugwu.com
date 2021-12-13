@@ -22,7 +22,7 @@
         </div> -->
 
         <vue-typed-js
-          :strings="['artist', 'writer', 'creative', 'designer', 'animator', 'frontend engineer']"
+          :strings="['artist', 'writer', 'creative', 'designer', 'animator', 'frontend engineer', 'mobile engineer']"
           :typeSpeed="80"
           :backSpeed="50"
           :backDelay="300"
@@ -107,7 +107,6 @@
 
 
     data: () => ({
-      
       messageToShow: `Hello ${ext.message}`,
       // onPageEnd: `${ext}`,
       messages: [

@@ -12,55 +12,55 @@
       <h2>Works</h2>
     </div>
 
+    
+
     <div class="art-area">
-      <ul>
-        <router-link to="/frontend">
-          <li>
+      <div class="button-holder"> <!--- buttons to toggle the works done -->
+        <div>
+          <button @click="layout = 'frontend'" :class = "{active : layout === 'frontend'}">
             Frontend
-          </li>
-        </router-link>
-        <router-link to="/artworks">
-          <li>
-            Artworks
-          </li>
-        </router-link>
-        <router-link to="/illustrations">
-          <li>
+          </button>
+          <button @click="layout = 'sketches'" :class = "{active : layout === 'sketches'}">
+            Sketches
+          </button>
+          <button @click="layout = 'illustrations'" :class = "{active : layout === 'illustrations'}">
             Illustrations
-          </li>
-        </router-link>
-        <!-- <router-link to="/animations">
-          <li>
-            Animations
-          </li>
-        </router-link> -->
-      </ul>
-      
-      <router-view/>
+          </button>
+        </div>
+      </div>
+
+      <div> <!--Shows work done content toggling between frontend works, sketches and illustrations-->
+        <div v-if = "layout === 'frontend'">
+          <Frontend />
+        </div>
+        <div v-if = "layout === 'sketches'">
+          <Sketches />
+        </div>
+        <div v-if = "layout === 'illustrations'">
+          <Illustrations />
+        </div>
+      </div>
     </div>
   
   </div>
 </template>
 
 <script>
+  import Frontend from './Frontend.vue'
+  import Sketches from './Sketches.vue'
+  import Illustrations from './Illustrations.vue'
+  
   export default{
     name: "Work",
 
+    components:{
+      Frontend,
+      Sketches,
+      Illustrations,
+    },
+
     data: () => ({
+      layout: "frontend",
       }),
-    methods: {
-      frontend() {
-        this.tab = "frontendTab";
-      },
-      sketches() {
-        this.tab = "sketchesTab";
-      },
-      illustrations() {
-        this.tab = 'illustrationsTab';
-      },
-      animations() {
-        this.tab = 'animationsTab';
-      },
-    }
   }
 </script>
