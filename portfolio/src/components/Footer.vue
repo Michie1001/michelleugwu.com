@@ -41,7 +41,7 @@
           :src="require('../assets/imgs/profileAvatar.svg')"
         >
         </v-img>
-        <small>&copy; Copyright 2021, Michelle Ugwu</small> 
+        <small>&copy; Copyright {{(new Date().getFullYear())}}, Michelle Ugwu</small> 
       </div>
     </footer>
   </div>
