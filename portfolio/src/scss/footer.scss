@@ -1,0 +1,51 @@
+footer{
+    width: 100vw;
+    color: #321531;
+    max-height: 25vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    .contacts-section{
+        padding: 1rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .contacts{
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1;
+            margin: .5rem 0;
+            padding: 0 1.5rem;
+            h5{
+                  color: #999;
+            }
+            i{
+                  color: #010c22;
+                  font-size: 1.5rem;
+                  transition: .3s ease;
+                  &:hover{
+                      color: #32a636;
+                      transform: scale(1.3);
+                  }
+            }
+        }
+    }
+    .footer-logo{
+        margin-left: auto;
+        text-align: center;
+        color: #010c22;
+        .imgg{
+            margin: 0 auto;
+        }
+    }
+    @include medium-screens{
+        display: flex;
+        justify-content: space-evenly;
+        .contacts-section{
+            flex-wrap: wrap;
+              max-width: 30vw;
+        }
+    }
+}

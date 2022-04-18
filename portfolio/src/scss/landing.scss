@@ -1,0 +1,133 @@
+.landing{
+	background-color:#cdd2e3;
+	overflow: hidden;
+	.main-content{
+	    position:relative;
+	}
+  	.about{
+	    width: 100%;
+	    padding: 10rem 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: flex-end;
+	    position: relative;
+	    h1{
+	      	font-size: 3.1rem;
+	      	color: #624561;
+	    }
+	}
+  	.roundbg{
+	    background-color: #f1f1fe;
+	    border-radius: 50%;
+	    position: absolute;
+	    top: 40vh;
+	    left: 0;
+	    height: 300px;
+	    width: 300px;
+  	}
+  	.only-dktp{
+	  	display: none;
+	  	@include medium-screens{
+	  		display: block;
+	  	}
+  	}
+  	.not-dktp{
+  		display: block;
+  		@include medium-screens{
+  			display: none;
+  		}
+  	}
+  	.big{
+	    top: -5vh;
+	    left: 70vw;
+	    transform: scale(2);
+	    background-color: #f1e2e1;
+  	}
+  	.small{
+	    top: 2vh;
+	    left: 21vw;
+	    transform: scale(.3);
+	    background-color: #01c2ea;
+	    opacity: .3;
+  	}
+	.curved-bar{
+	    background-color: #f1f1f1;
+	    clip-path: ellipse(100% 100% at 50% 100%);
+	    min-height: 100vh;
+	    width: 100vw;
+	    z-index: 1;
+	    position: absolute;
+	    @include large-screens{
+	    	clip-path: ellipse(70% 100% at 50% 100%);
+	    }
+	}
+	.titlePhoto {
+	    position: relative;
+	    z-index: 2;
+	    margin-top: -4rem;
+	    width: 100vw;
+	    display: flex;
+	    justify-content: center;
+	}
+    .main-heading{
+		position:relative;
+		z-index: 10;
+		font-weight: normal;
+		margin-top: 4rem;
+		font-size: 1.4rem;
+		line-height: 1.3;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+		.messages{
+	        text-transform: uppercase;
+	        font-weight: bold;
+			font-size: 1.6rem;
+	        animation: openclose 7s ease infinite;
+	    }
+    }
+	.banner{
+		z-index: 3;
+		@include large-screens{
+			height: 350px;
+		}
+	}
+	.postscript{
+		background-color: #f1f1f1;
+		color: #321531;
+		padding: 2rem 0;
+		text-align: center;
+		font-size: 2rem;
+		h2{
+			font-weight: normal;
+		}
+		p{
+			font-size: .8rem;
+			color: #32a636;
+		}
+		.contactMe p{
+	    	font-size: .8rem;
+	    	color: inherit;
+	    	margin: 0;
+	    }
+	}
+
+  	.toTop{
+	    display: none;
+	    position: fixed;
+	    bottom: 20px;
+	    right: 30px;
+	    z-index: 8;
+	    transform: rotate(-90deg);
+	    transition: all 1s ease;
+	    i{
+	    	color: #f76599;
+	    }
+	    &:hover{
+	      	transform: translateY(5px) rotate(-100deg);
+	      	i{
+	      		color: #00aeff;
+	      	}
+	    }
+    }
+}

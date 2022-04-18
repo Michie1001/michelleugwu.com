@@ -1,0 +1,28 @@
+@keyframes tilt {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes openclose {
+    0% {
+        color: #35cbfa;
+    }
+    25% {
+        color: green;
+    }
+    50% {
+        color: #f76599;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: #35cbfa;
+    }
+}
