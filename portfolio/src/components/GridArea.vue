@@ -81,9 +81,24 @@
     data: () => ({
       experience: [
         {
-          role: 'Volunteer Code Instructor',
-          company: 'Child Can Code',
-          date: 'Taught primary school kids basic programming in 2016',
+          role: 'Mobile Engineer (Flutter)',
+          company: 'Dukka Inc.',
+          date: '2nd rotation in my graduate internship from late 2021 to early 2022',
+        },
+        {
+          role: 'Frontend Engineer (ReactJS)',
+          company: 'Dukka Inc.',
+          date: '1st rotation in my graduate internship from mid to late 2021',
+        },
+        {
+          role: 'Frontend Engineer (VueJS)',
+          company: 'Hotels.ng',
+          date: 'For my NYSC in 2020',
+        },
+        {
+          role: 'Frontend Developer Intern (Laravel Blade)',
+          company: 'Hotels.ng',
+          date: 'Swapped to the developers\' corner till the end of my SIWES internship',
         },
         {
           role: 'Growth and Marketing Intern',
@@ -91,14 +106,9 @@
           date: 'Marketing experience at the start of my SIWES internship in 2017',
         },
         {
-          role: 'Frontend Developer Intern',
-          company: 'Hotels.ng',
-          date: 'Swapped to the developers\' corner till the end of my SIWES internship',
-        },
-        {
-          role: 'Frontend Engineer',
-          company: 'Hotels.ng',
-          date: 'For my NYSC in 2020',
+          role: 'Volunteer Code Instructor',
+          company: 'Child Can Code',
+          date: 'Taught primary school kids basic programming in 2016',
         },
       ],
       achievements: [
@@ -141,6 +151,7 @@
         'Adobe Illustrator',
         'Adobe Lightroom',
         'Adobe Spark',
+        'Adobe XD',
         'Actions on Google',
         'Mailchimp',
         'Email on Acid',
@@ -149,6 +160,8 @@
       ],
       skills: [
         'VueJS',
+        'ReactJS',
+        'Flutter',
         'Digital Design',
         'GraphQL',
         'Linux',
@@ -157,7 +170,6 @@
         'Vuetify',
         'Laravel',
         'Sass',
-        'SEO',
       ],
     }),
   }
