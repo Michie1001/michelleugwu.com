@@ -78,6 +78,7 @@
 </template>
 
 <script>
+  import jumbotron from './Jumbotron.vue'
   import gridArea from './GridArea.vue'
   import workSection from './WorkSection.vue'
   import postScript from './PostScript.vue'
@@ -92,6 +93,7 @@
     },
 
     components: {
+      jumbotron,
       gridArea,
       workSection,
       postScript,
