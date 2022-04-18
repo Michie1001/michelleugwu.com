@@ -61,6 +61,23 @@
 	    	clip-path: ellipse(70% 100% at 50% 100%);
 	    }
 	}
+	.navButtons{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		&_individual{
+			background-color: #904c4cde;
+			color: #fff;
+			font-size: 22px;
+			font-weight: bold;
+			padding: 1rem 2rem;
+			border-radius: 50px;
+			margin: 2rem;
+		}
+		.float-right{
+			z-index: 10;
+		}
+	}
 	.titlePhoto {
 	    position: relative;
 	    z-index: 2;
