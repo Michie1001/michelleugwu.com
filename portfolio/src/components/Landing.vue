@@ -6,17 +6,7 @@
       <div class="curved-bar">
       </div>
 
-      <div class="titlePhoto">
-          <v-img
-            dark
-            alt="Illustrated resting cat"
-            lazysrc=""
-            contain
-            height= "200"
-            width= "300"
-            :src="require('../assets/imgs/kitty.png')"
-          ></v-img>
-      </div>
+      <titlePhoto/>
 
       <vue-typed-js
         :strings="['artist', 'writer', 'creative', 'designer', 'animator', 'frontend engineer']"
@@ -79,6 +69,7 @@
 
 <script>
   import jumbotron from './Jumbotron.vue'
+  import titlePhoto from './TitlePhoto.vue'
   import gridArea from './GridArea.vue'
   import workSection from './WorkSection.vue'
   import postScript from './PostScript.vue'
@@ -94,6 +85,7 @@
 
     components: {
       jumbotron,
+      titlePhoto,
       gridArea,
       workSection,
       postScript,
