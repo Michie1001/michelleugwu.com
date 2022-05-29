@@ -1,0 +1,46 @@
+.art{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1rem 3rem 1rem;
+
+    .image{
+        max-width: 20rem;
+        min-width: 10rem;
+        position: relative;
+        margin: 1rem;
+        transform: scale(1);
+        transition: 1s ease all;
+        .art-description{
+            position: absolute;
+            bottom: 1rem;
+            border-radius: 5px;
+            padding: .3rem 2rem;
+            background-color: rgba(113,26,28, .4);
+            color: #fff;
+            font-weight: bold;
+            transition: .6s ease all;
+        }
+        @include large-screens {
+            filter: brightness(40%);
+            .art-description{
+                background-color: #711a1c;
+                font-weight: 400;
+            }
+
+            &:hover{
+                filter: brightness(100%);
+                z-index: 2000;
+                transform: scale(1.2);
+                .art-description{
+                    opacity: 5;
+                    transform: scale(1.2);
+                    transition: .2s ease;
+                    &:hover{
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

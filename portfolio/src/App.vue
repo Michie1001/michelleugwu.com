@@ -1,26 +1,14 @@
 <template>
   <v-app>
     <v-main>
-      <Landing/>
+      <div id="app" class="navButtons">
+        <a href="#/" class="navButtons_individual">To Home</a>
+        <a href="#/projects" class="navButtons_individual float-right">To Projects</a>
+      </div>
+      <component :is="currentView" />
     </v-main>
   </v-app>
 </template>
-
-<script>
-import Landing from './components/Landing';
-
-export default {
-  name: 'App',
-
-  components: {
-    Landing,
-  },
-
-  data: () => ({
-    //
-  }),
-};
-</script>
 
 <style lang="scss">
   @import '@/scss/app.scss';
@@ -39,3 +27,32 @@ export default {
     -moz-osx-font-smoothing: grayscale;
   }
 </style>
+
+<script>
+import Home from '@/components/Landing.vue';
+import Projects from '@/components/Projects.vue';
+import NotFound from '@/components/NotFound.vue'
+
+const routes = {
+  '/': Home,
+  '/projects': Projects
+}
+
+export default {
+  data() {
+    return {
+      currentPath: window.location.hash
+    }
+  },
+  computed: {
+    currentView() {
+      return routes[this.currentPath.slice(1) || '/'] || NotFound
+    }
+  },
+  mounted() {
+    window.addEventListener('hashchange', () => {
+      this.currentPath = window.location.hash
+		})
+  }
+}
+</script>

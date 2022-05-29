@@ -96,9 +96,13 @@
           date: 'For my NYSC in 2020',
         },
         {
+          role: 'Freelance Artist',
+          date: 'The period between school and NYSC. 2019',
+        },
+        {
           role: 'Frontend Developer Intern (Laravel Blade)',
           company: 'Hotels.ng',
-          date: 'Swapped to the developers\' corner till the end of my SIWES internship',
+          date: 'Swapped to the developers\' corner till the end of my SIWES internship in 2017',
         },
         {
           role: 'Growth and Marketing Intern',

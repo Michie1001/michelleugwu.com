@@ -1,7 +1,7 @@
 <template v-on:scroll.native="onPageEnd">
   <div class="landing">
 
-    <div class="main-content" v:on:scroll.native="">
+    <div class="main-content">
       <jumbotron/>
       <div class="curved-bar">
       </div>
@@ -24,8 +24,6 @@
       </vue-typed-js>
 
       <gridArea :message="messageToShow"/>
-      
-      <workSection />
 
       <div class="large-illustrated-banner">
         <v-img
@@ -71,7 +69,6 @@
   import jumbotron from './Jumbotron.vue'
   import titlePhoto from './TitlePhoto.vue'
   import gridArea from './GridArea.vue'
-  import workSection from './WorkSection.vue'
   import postScript from './PostScript.vue'
   import Footer from './Footer.vue'
   import * as ext from '../assets/extras.js'
@@ -87,7 +84,6 @@
       jumbotron,
       titlePhoto,
       gridArea,
-      workSection,
       postScript,
       Footer,
     },

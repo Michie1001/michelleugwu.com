@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Landing msg="Hi, I'm Michelle and I ---"/>
+    <Landing />
   </div>
 </template>
 
