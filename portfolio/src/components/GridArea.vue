@@ -81,6 +81,11 @@
     data: () => ({
       experience: [
         {
+          role: 'In-House Engineering Mentor (Frontend)',
+          company: 'Dukka Inc.',
+          date: 'Provided guidance to my mentee on using ReactJS and navigating the Dukka codebase and structure',
+        },
+        {
           role: 'Mobile Engineer (Flutter)',
           company: 'Dukka Inc.',
           date: '2nd rotation in my graduate internship from late 2021 to early 2022',
@@ -131,9 +136,14 @@
       ],
       education: [
         {
-          institute: 'University of Benin, Benin, Nigeria',
-          degree: 'Biochemistry',
-          date: 'Started off thinking I could overcome the metabolic pathways...pfft! What I did was learn how to carry out 5 lab tests in the hospital during my medical internship at the campus health center, in my second year',
+          institute: 'University of Lincoln, Brayford Pool, Lincolnshire, United Kingdom',
+          degree: 'Games Design and Development',
+          date: 'Building games with Unity, Unreal, C#, C++......it is actually tiring. Wish me luck, till September 2023',
+        },
+        {
+          institute: 'Carbon Animation, Lagos, Nigeria',
+          degree: 'Animation Basics',
+          date: '2021, I\'d have my animation reel up here',
         },
         {
           institute: 'University of Benin, Benin, Nigeria',
@@ -141,39 +151,36 @@
           date: 'Graduated November 2019',
         },
         {
-          institute: 'Carbon Animation, Lagos, Nigeria',
-          degree: 'Animation Basics',
-          date: '2021, I\'d have my animation reel up here',
+          institute: 'University of Benin, Benin, Nigeria',
+          degree: 'Biochemistry',
+          date: 'Started off thinking I could overcome the metabolic pathways...pfft! What I did was learn how to carry out 5 lab tests in the hospital during my medical internship at the campus health center, in my second year',
         },
       ],
       tools: [
-        'Google Analytics',
+        'Unity',
+        'Unreal Engine',
         'Figma',
         'Postman',
         'Adobe AfterEffects',
         'Adobe Photoshop',
         'Adobe Illustrator',
-        'Adobe Lightroom',
-        'Adobe Spark',
         'Adobe XD',
         'Actions on Google',
         'Mailchimp',
         'Email on Acid',
         'Canva',
-
       ],
       skills: [
         'VueJS',
         'ReactJS',
         'Flutter',
         'Digital Design',
-        'GraphQL',
         'Linux',
         'Fluent English',
         'Bootstrap',
         'Vuetify',
-        'Laravel',
         'Sass',
+        'C#'
       ],
     }),
   }
